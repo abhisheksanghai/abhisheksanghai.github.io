@@ -4,7 +4,35 @@
 1. Linear Regression 
 
 **Theory**
+
 Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. 
+
+_Intution_
+
+Let's suppose the equation for linear regression with n independent variables is, 
+Y = b0 + b1*x1 + b2*x2 + bn*xn
+
+Now, if we do not have any independent variables, the equation would become,
+Y = b0
+i.e. the prediction is a constant which is average of Y.
+
+The error metric considered is Sum of Square of Error (SSE).
+In this case, it is called Sum of Square of Total, SST = sum((y-y_avg)^2) **(also called variance of Y)**
+
+As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
+
+After inclusion of independent variables, the error i.e. SSE = sum((y-y_pred)^2)
+
+Intutively, SST is the total variance (error) of Y while SSE is the variance (error) that the model is still not able to explain after inclusion of independent variable. From this, we can compute the error that the new model is able to explain. Let's call it SSR (Sum of Square of Regression).
+So, SSR = SST-SSE
+Now we can define a metric to get the ratio of error expalined by the model.
+This metric is called R2 (R-Squared) = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
+
+Since, the SSE varies between 0 and SST, R2 varies between 0 and 1. Higher the R2 => better the model.
+
+In very rare cases R2 might be negative. This is when the error is greater than SST, so the predicitons are worse than the average predictions with no independent variables.
+
+
 
 
 **Code** 
