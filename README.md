@@ -4,6 +4,8 @@
 1. Linear Regression 
 
 **Theory**
+Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. 
+
 
 **Code** 
 - Gradient Descent
