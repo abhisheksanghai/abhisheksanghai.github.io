@@ -2,7 +2,12 @@
 ## Supervised Learning
 ### Regression
 
-1. Linear Regression (Gradient Descent)
+1. Linear Regression 
+
+**Theory**
+
+**Code** 
+- Gradient Descent
 
 ```
 import numpy as np
