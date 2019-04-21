@@ -10,7 +10,7 @@ These are of 2 types i.e. Regression and Classification.
 
 Regression Models have continuous variable as outcome while classification Models have categorical variables as outcome.
 
-# Regression Models
+### Regression Models
 
 1. Linear Regression -
 
