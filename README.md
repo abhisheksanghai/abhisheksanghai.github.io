@@ -1,12 +1,12 @@
 # Machine Learning
 
 ML models are a tool useful to establish a relationship or find patterns in the data. As it is wisely said, all models are wrong, only some are useful. The results from the models should always be verified to make sense from the business perspective.
-ML is majorly divided into 2 types namely, **supervised and unsupervised learning**.
+ML is majorly divided into two types namely, **supervised and unsupervised learning**.
 
 ## Supervised Learning
 
 These are models that have the outcome variable defined and the objective is to reach as close as possible to this outcome variable.
-These are of 2 types i.e. Regression and Classification.
+These are of two types i.e. **Regression and Classification**.
 
 Regression Models have continuous variable as outcome while classification Models have categorical variables as outcome.
 
@@ -16,7 +16,7 @@ Regression Models have continuous variable as outcome while classification Model
 
 **Theory**
 
-Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. 
+Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two commonly used algorithm used to optimize the parameters of the model. OLS (Ordinary Least Square) and Gradient Descent. 
 
 _Intution_
 
