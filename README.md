@@ -14,9 +14,7 @@ Regression Models have continuous variable as outcome while classification Model
 
 1. Linear Regression -
 
-**Theory**
-
-Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two commonly used algorithm used to optimize the parameters of the model. OLS (Ordinary Least Square) and Gradient Descent. 
+Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two algorithms commonly used to optimize the parameters of the model, Linear algebra (Specific to this model) and Gradient Descent (commonly used in a lot of Machine Learning Models). 
 
 _Intution_
 
