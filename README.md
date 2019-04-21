@@ -1,7 +1,18 @@
-# Machine Learning Algorithms
+# Machine Learning
+
+ML models are a tool useful to establish a relationship or find patterns in the data. As it is wisely said, all models are wrong, only some are useful. The results from the models should always be verified to make sense from the business perspective.
+ML is majorly divided into 2 types namely, supervised and unsupervised learning.
+
 ## Supervised Learning
 
-1. Linear Regression 
+These are models that have the outcome variable defined and the objective is to reach as close as possible to this outcome variable.
+These are of 2 types i.e. Regression and Classification.
+
+Regression Models have continuous variable as outcome while classification Models have categorical variables as outcome.
+
+# Regression Models
+
+1. Linear Regression -
 
 **Theory**
 
