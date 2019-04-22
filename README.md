@@ -65,8 +65,9 @@ Mathematically, R<sup>2</sup> may have negative values. However, when this happe
 
 Once the model is built on the data (called as train data), we have to test it against unseen or out of sample data (called as test data) to verify that the patterns or equations discovered apply to them as well. Often, it so happens that while trying to learn the relationship, we end up learning the noise present in the data as well. This leads to really good results for the train data but when applied to test data, the result declines. 
 
-In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed Adjusted R-Squared.
-Adj R<sup>2</sup> = 1 - (1-R<sup>2</sup>)*(n-1)/(n-p-1)
+In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed, Adjusted R-Squared.
+Adj R<sup>2</sup> = 1 - <sup>1-R<sup>2</sup>)*(n-1)</sup>&frasl;<sub>(n-p-1)</sub>
+
 
 
 
