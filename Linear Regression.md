@@ -1,4 +1,4 @@
-###Linear Regression
+### Linear Regression
 
 Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two algorithms commonly used to optimize the parameters of the model, Linear algebra (Specific to this model) and Gradient Descent (commonly used in a lot of Machine Learning Models). 
 
