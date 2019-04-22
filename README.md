@@ -41,20 +41,24 @@ Consider the situation where we do not have any independent variables. One of th
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-In this case, SSE is called Sum of Square of Total, SST = &Sigma;(Y-Y&#772;)<sup>2</sup> **(also called variance of Y)**
+In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y-Y&#773;)<sup>2</sup> **(also called variance of Y)**
 
-As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
+The error SST is considered as a reference for Linear Regression Models to be evaluated as we start including independent variables.
+This is because, the error metric is supposed to decline with increase in variables (otherwise including the variable is useless).
 
-After inclusion of independent variables, the error i.e. SSE = sum((y-y_pred)^2)
+_Case 2:_
 
-Intutively, SST is the total variance (error) of Y while SSE is the variance (error) that the model is still not able to explain after inclusion of independent variable. From this, we can compute the error that the new model is able to explain. Let's call it SSR (Sum of Square of Regression).
-So, SSR = SST-SSE
-Now we can define a metric to get the ratio of error expalined by the model.
-This metric is called R2 (R-Squared) = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
+After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y-h<sub>&theta;</sub>(x))<sup>2</sup>
 
-Since, the SSE varies between 0 and SST, R2 varies between 0 and 1. Higher the R2 => better the model.
+Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). So, **SSR = SST-SSE**
 
-In very rare cases R2 might be negative. This is when the error is greater than SST, so the predicitons are worse than the average predictions with no independent variables.
+Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
+
+R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
+
+R2 varies between 0 and 1. Higher the R2 => better the model. **(Caution! Overfitting)**
+
+Mathematically, R2 may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
 
 
 
