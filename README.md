@@ -16,7 +16,7 @@ Regression Models have continuous variable as outcome while classification Model
 
 Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two algorithms commonly used to optimize the parameters of the model, Linear algebra (Specific to this model) and Gradient Descent (commonly used in a lot of Machine Learning Models). 
 
-_Intution_
+**Intution**
 
 General equation for linear regression with n independent variables is, 
 
@@ -24,14 +24,10 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
 
-where Y is actual dependent variable, 
-
+_where_ Y is actual dependent variable, 
 x<sub>1</sub>,x<sub>2</sub>,....,x<sub>n</sub> are independent variables, 
-
 h<sub>&theta;</sub>(x) is predicted dependent variable,
-
 &theta;<sub>o</sub>, &theta;<sub>1</sub>,...,&theta;<sub>n</sub> are coefficients of independent variables and
-
 &straightepsilon; is the error term
 
 Now, if we do not have any independent variables, the equation would become,
