@@ -56,9 +56,9 @@ Now we can define another evaluation metric for our model i.e. R-Squared = (Expl
 
 R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
 
-R2 varies between 0 and 1. Higher the R2 => better the model. **(Caution! Overfitting)**
+R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> => better the model. **(Caution! Overfitting)**
 
-Mathematically, R2 may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
+Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
 
 
 
