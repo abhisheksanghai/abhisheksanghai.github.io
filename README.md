@@ -50,7 +50,8 @@ _Case 2:_
 
 After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y-h<sub>&theta;</sub>(x))<sup>2</sup>
 
-Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). So, **SSR = SST-SSE**
+Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
+So, **SSR = SST-SSE**
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
@@ -59,6 +60,13 @@ R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
 R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> => better the model. **(Caution! Overfitting)**
 
 Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
+
+**Overfitting**
+
+Once the model is built on the data (called as train data), we have to test it against unseen or out of sample data (called as test data) to verify that the patterns or equations discovered apply to them as well. Often, it so happens that while trying to learn the relationship, we end up learning the noise present in the data as well. This leads to really good results for the train data but when applied to test data, the result declines. 
+
+In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed Adjusted R-Squared.
+Adj R<sup>2</sup> = 1 - (1-R<sup>2</sup>)*(n-1)/(n-p-1)
 
 
 
