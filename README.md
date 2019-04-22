@@ -35,7 +35,7 @@ Consider the situation where we do not have any independent variables. One of th
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close as Y as possible.
+The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
 In this case, it is called Sum of Square of Total, SST = sum((y-y_avg)^2) **(also called variance of Y)**
 
 As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
