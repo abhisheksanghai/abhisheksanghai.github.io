@@ -29,15 +29,13 @@ _where_, Y is actual dependent variable,
 x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
 h<sub>&theta;</sub>(x) is predicted dependent variable,
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
-&straightepsilon; is the error term
+&straightepsilon; is the error term.
 
-Now, if we do not have any independent variables, the predcition equation would become,
+Consider the situation where we do not have any independent variables. One of the possible ways of prediction in this case would be to just take the average of Y. This can be suitably depicted using the above equations,
 
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-i.e. the prediction is a constant which is average of Y (the dependent variable).
-
-The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS).
+The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close as Y as possible.
 In this case, it is called Sum of Square of Total, SST = sum((y-y_avg)^2) **(also called variance of Y)**
 
 As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
