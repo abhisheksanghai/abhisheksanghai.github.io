@@ -5,8 +5,7 @@ ML is majorly divided into two types namely, **supervised and unsupervised learn
 
 ## Supervised Learning
 
-These are models that have the outcome variable defined and the objective is to reach as close as possible to this outcome variable.
-These are of two types i.e. **Regression and Classification**.
+These are models that have the outcome variable defined and the objective is to reach as close as possible to this outcome variable. These are of two types i.e. **Regression and Classification**. For this, we first define an error metric to help us with our cause. We will look into this later on.
 
 Regression Models have continuous variable as outcome while classification Models have categorical variables as outcome.
 
@@ -22,19 +21,23 @@ General equation for linear regression with n independent variables is,
 
 Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> + &straightepsilon;
 
+and the prediction equation is, 
+
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
 
-_where_ Y is actual dependent variable, 
-x<sub>1</sub>,x<sub>2</sub>,....,x<sub>n</sub> are independent variables, 
+_where_, Y is actual dependent variable, 
+x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
 h<sub>&theta;</sub>(x) is predicted dependent variable,
-&theta;<sub>o</sub>, &theta;<sub>1</sub>,...,&theta;<sub>n</sub> are coefficients of independent variables and
+&theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 &straightepsilon; is the error term
 
-Now, if we do not have any independent variables, the equation would become,
-Y = b0
-i.e. the prediction is a constant which is average of Y.
+Now, if we do not have any independent variables, the predcition equation would become,
 
-The error metric considered is Sum of Square of Error (SSE).
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>
+
+i.e. the prediction is a constant which is average of Y (the dependent variable).
+
+The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS).
 In this case, it is called Sum of Square of Total, SST = sum((y-y_avg)^2) **(also called variance of Y)**
 
 As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
