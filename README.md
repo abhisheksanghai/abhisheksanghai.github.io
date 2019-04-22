@@ -31,12 +31,17 @@ h<sub>&theta;</sub>(x) is predicted dependent variable,
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 &straightepsilon; is the error term.
 
+The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
+
+SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y)<sup>2</sup>
+
+_Case 1:_
+
 Consider the situation where we do not have any independent variables. One of the possible ways of prediction in this case would be to just take the average of Y. This can be suitably depicted using the above equations,
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
-In this case, it is called Sum of Square of Total, SST = sum((y-y_avg)^2) **(also called variance of Y)**
+In this case, SSE is called Sum of Square of Total, SST = &Sigma;(Y-Y&#772;)<sup>2</sup> **(also called variance of Y)**
 
 As we start including independent variables, the error is supposed to decline (otherwise including the variable is useless)
 
