@@ -20,6 +20,7 @@ _Intution_
 
 Let's suppose the equation for linear regression with n independent variables is, 
 Y = b0 + b1*x1 + b2*x2 + bn*xn
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 Now, if we do not have any independent variables, the equation would become,
 Y = b0
