@@ -97,7 +97,7 @@ Now, the above equation is a function of &beta; and our objective is to minimize
 
 &#8658; I&beta; = (X&#884;X)&#884;X&#884;Y (I is the identity matrix)
 
-&#8658; &beta; = (X&#884;X)<sup>-1</sup>X&#884;Y
+**&#8658; &beta; = (X&#884;X)<sup>-1</sup>X&#884;Y**
 
 2. Gradient Descent (Batch and Stochastic)
 
