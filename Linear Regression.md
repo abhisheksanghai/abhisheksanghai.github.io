@@ -10,7 +10,7 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 and the prediction equation is, 
 
-Y&#770; = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
+Y&#770;(x) = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
 
 _where_, Y is actual dependent variable, 
 x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
@@ -28,14 +28,14 @@ Consider the situation where we do not have any independent variables. One of th
 
 Y&#773; = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y-Y&#773;)<sup>2</sup> **(also called variance of Y)**
+In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y(x)-Y&#773;)<sup>2</sup> **(also called variance of Y)**
 
 The error SST is considered as a reference for Linear Regression Models to be evaluated as we start including independent variables.
 This is because, the error metric is supposed to decline with increase in variables (otherwise including the variable is useless).
 
 _Case 2:_
 
-After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y-h<sub>&theta;</sub>(x))<sup>2</sup>
+After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(x)-h<sub>&theta;</sub>(x))<sup>2</sup> = &Sigma;(Y(x)-Y&#770;(x))<sup>2</sup>
 
 Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
 So, **SSR = SST-SSE**
