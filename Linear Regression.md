@@ -40,7 +40,7 @@ After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(
 Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
 So, **SSR = SST-SSE**
 
-![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression.png)
+![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression/Linear_Regression.png)
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
@@ -63,6 +63,22 @@ On the other hand, as p increases => Adj R<sup>2</sup> decreases.
 So, if increase in p does not increases R<sup>2</sup> as it should, Adj R<sup>2</sup> will decrease. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
 
 **Theory**
+
+1. Normal Equation Method - 
+
+This method is based on Linear Algebra. 
+
+Y = X&beta; + &straightepsilon;
+
+Matrix Representation - 
+
+![Normal_Equation](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression/Normal_Equation.PNG)
+
+So, &straightepsilon; = Y - X&beta;
+
+Now, our error metric SSE can be represented in matrix form as
+
+2. Gradient Descent (Batch and Stochastic)
 
 _To be updated_
 
