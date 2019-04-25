@@ -20,7 +20,7 @@ h<sub>&theta;</sub>(x) is predicted dependent variable,
 
 The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
 
-SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y)<sup>2</sup>
+SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y(x))<sup>2</sup>
 
 _Case 1:_
 
