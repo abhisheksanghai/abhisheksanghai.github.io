@@ -10,7 +10,7 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 and the prediction equation is, 
 
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
+Y&#770; = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> 
 
 _where_, Y is actual dependent variable, 
 x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
@@ -26,7 +26,7 @@ _Case 1:_
 
 Consider the situation where we do not have any independent variables. One of the possible ways of prediction in this case would be to just take the average of Y. This can be suitably depicted using the above equations,
 
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
+Y&#773; = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
 In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y-Y&#773;)<sup>2</sup> **(also called variance of Y)**
 
