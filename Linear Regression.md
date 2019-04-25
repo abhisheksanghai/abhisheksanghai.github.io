@@ -37,7 +37,8 @@ _Case 2:_
 
 After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(x)-h<sub>&theta;</sub>(x))<sup>2</sup> = &Sigma;(Y(x)-Y&#770;(x))<sup>2</sup>
 
-Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
+Intutively, SST is the error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
+
 So, **SSR = SST-SSE**
 
 ![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression/Linear_Regression.png)
@@ -46,7 +47,7 @@ Now we can define another evaluation metric for our model i.e. R-Squared = (Expl
 
 R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
 
-R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> => better the model. **(Caution! Overfitting)**
+R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> &#8658; better the model. **(Caution! Overfitting)**
 
 Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
 
@@ -58,8 +59,8 @@ In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R
 
 Adj R<sup>2</sup> = 1 - <sup>(1-R<sup>2</sup>)*(n-1)</sup>&frasl;<sub>(n-p-1)</sub>, _where_, n is no. of data points and p is no. of variables.
 
-Looking at the equation, as p increases => R<sup>2</sup> increases => Adj R<sup>2</sup> increases,
-On the other hand, as p increases => Adj R<sup>2</sup> decreases.
+Looking at the equation, as p increases &#8658; R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases,
+On the other hand, as p increases &#8658; Adj R<sup>2</sup> decreases.
 So, if increase in p does not increases R<sup>2</sup> as it should, Adj R<sup>2</sup> will decrease. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
 
 **Theory**
@@ -76,7 +77,27 @@ Matrix Representation -
 
 So, &straightepsilon; = Y - X&beta;
 
-Now, our error metric SSE can be represented in matrix form as
+Now, our error metric SSE can be represented in matrix form as, &straightepsilon;&#884;&straightepsilon; = &straightepsilon;<sub>1</sub><sup>2</sup> + &straightepsilon;<sub>2</sub><sup>2</sup> + ... + &straightepsilon;<sub>n</sub><sup>2</sup> = &Sigma;&straightepsilon;<sub>i</sub><sup>2</sup>
+
+Therefore, &straightepsilon;&#884;&straightepsilon; = (Y - X&beta;)&#884;(Y - X&beta;)
+
+&#8658; &straightepsilon;&#884;&straightepsilon; = Y&#884;Y - Y&#884;X&beta; - &beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
+
+Here, 2nd and 3rd term on the RHS are transpose of each other. Also, they are scalar values with dimension (1 x 1). So, they are equal to each other.
+
+&#8658; &straightepsilon;&#884;&straightepsilon; = Y&#884;Y - 2&beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
+
+Now, the above equation is a function of &beta; and our objective is to minimize it. In order to do this, we differentiate the equation with respect to &beta; and equate to Zero.
+
+&#8658; &#x2202;(&straightepsilon;&#884;&straightepsilon;)&frasl;&#x2202;&beta; = -2X&#884;Y + 2X&#884;X&beta; = 0
+
+&#8658; X&#884;X&beta; = X&#884;Y
+
+&#8658; (X&#884;X)<sup>-1</sup>X&#884;X&beta; = (X&#884;X)<sup>-1</sup>X&#884;Y (Pre multiply by inverse of X&#884;X)
+
+&#8658; I&beta; = (X&#884;X)&#884;X&#884;Y (I is the identity matrix)
+
+&#8658; &beta; = (X&#884;X)<sup>-1</sup>X&#884;Y
 
 2. Gradient Descent (Batch and Stochastic)
 
