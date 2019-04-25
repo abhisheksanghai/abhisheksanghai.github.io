@@ -40,6 +40,8 @@ After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(
 Intutively, SST is the max error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
 So, **SSR = SST-SSE**
 
+![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression.png)
+
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
 R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
