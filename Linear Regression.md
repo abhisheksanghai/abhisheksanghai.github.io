@@ -113,19 +113,18 @@ The additional term 1&frasl;2 is for mathematical convenience while n is merely 
 
 Gradient of J is defined as, <sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub> = <sup>1</sup>&frasl;<sub>n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}x<sup>(i)</sup><sub>j</sub>; _where_ j = 0 to k.
 
-The update equation for &theta; is, &theta;<sub>j</sub>:= &theta;<sub>j</sub> - &alpha;<sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
+The update equation for &theta;,
 
-&alpha varies between 0 and 1 and needs to be optimized
+Repeat untill Convergence,
+&theta;<sub>j</sub>:= &theta;<sub>j</sub> - &alpha;<sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
 
+&alpha; varies between 0 and 1 and needs to be optimized. After every update we calculate J(&theta;) and observe the change. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
 
+**Note:** The update for the &theta;s happen simultaneously.
 
+The process described above is called **Batch Gradient Descent**.
 
-
-
-
-
-
-_To be updated_
+An alternate process is **Stochastic Gradient Descent** where we update &theta;s based on 1 data point at time. The data points are chosen randomly(stochastic). Another alternate approach is **Mini Batch Gradient Descent** where we update &theta;s based on certain fixed no. of data points.
 
 **Code** 
 - Gradient Descent
