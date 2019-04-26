@@ -124,7 +124,7 @@ Repeat untill Convergence,
 
 The process described above is called **Batch Gradient Descent**.
 
-An alternate process is **Stochastic Gradient Descent** where we update &theta;s based on 1 data point at time. The data points are chosen randomly(stochastic). Another alternate approach is **Mini Batch Gradient Descent** where we update &theta;s based on certain fixed no. of data points.
+An alternate process is **Stochastic Gradient Descent** where we update &theta;s based on 1 data point at a time. The data points are chosen randomly(stochastic). Another alternate approach is **Mini Batch Gradient Descent** where we update &theta;s based on certain fixed no. of data points at a time.
 
 **Code** 
 - Gradient Descent
