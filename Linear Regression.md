@@ -41,7 +41,7 @@ Intutively, SST is the error of Y with no independent variable (Total variance) 
 
 So, **SSR = SST-SSE**
 
-![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression/Linear_Regression.png)
+![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear_Regression_Help_files/Linear_Regression.png)
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
@@ -73,7 +73,7 @@ Y = X&beta; + &straightepsilon;
 
 Matrix Representation - 
 
-![Normal_Equation](https://github.com/abhisang32/abhisang32.github.io/blob/Linear-regression/Linear_Regression/Normal_Equation.PNG)
+![Normal_Equation](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear_Regression_Help_files/Normal_Equation.PNG)
 
 So, &straightepsilon; = Y - X&beta;
 
@@ -105,7 +105,7 @@ If we analyze the above equation, the first term X&#884;X is the covariance matr
 
 Gradient tells us the slope of a function at a given position. **It is a vector which always points towards the maximum increase of a function**. So, the general procedure is to define the objective function, randomly initialize parameters and gradually move in the opposite direction as that of the gradient in order to minimize the function's value.
 
-![Gradient Descent]()
+![Gradient Descent](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear_Regression_Help_files/Gradient_Descent.png)
 
 The Objective function we have is SSE. Let's denote it by J(&theta;) = <sup>1</sup>&frasl;<sub>2n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}<sup>2</sup>; _where_ i = 1 to n. n is no. of observations and k is no. of variables.
 
