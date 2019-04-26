@@ -89,7 +89,7 @@ Here, 2nd and 3rd term on the RHS are transpose of each other. Also, they are sc
 
 Now, the above equation is a function of &beta; and our objective is to minimize it. In order to do this, we differentiate the equation with respect to &beta; and equate to Zero.
 
-&#8658; &#x2202;(&straightepsilon;&#884;&straightepsilon;)&frasl;&#x2202;&beta; = -2X&#884;Y + 2X&#884;X&beta; = 0
+&#8658; <sup>&#x2202;(&straightepsilon;&#884;&straightepsilon;)</sup>&frasl;<sub>&#x2202;&beta;</sub> = -2X&#884;Y + 2X&#884;X&beta; = 0
 
 &#8658; X&#884;X&beta; = X&#884;Y
 
@@ -99,9 +99,32 @@ Now, the above equation is a function of &beta; and our objective is to minimize
 
 **&#8658; &beta; = (X&#884;X)<sup>-1</sup>X&#884;Y**
 
-2. Gradient Descent (Batch and Stochastic)
+If we analyze the above equation, the first term X&#884;X is the covariance matrix of independent variables while second term X&#884;Y is covariance between X and Y. This is when we consider the variables in their standardized form.
 
-_To be updated_
+2. Gradient Descent - 
+
+Gradient tells us the slope of a function at a given position. **It is a vector which always points towards the maximum increase of a function**. So, the general procedure is to define the objective function, randomly initialize parameters and gradually move in the opposite direction as that of the gradient in order to minimize the function's value.
+
+![Gradient Descent]()
+
+The Objective function we have is SSE. Let's denote it by J(&theta;) = <sup>1</sup>&frasl;<sub>2n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}<sup>2</sup>; _where_ i = 1 to n. n is no. of observations and k is no. of variables.
+
+The additional term 1&frasl;2 is for mathematical convenience while n is merely to make the error metric MSE(Mean Square Error). This would not affect the output that we get.
+
+Gradient of J is defined as, <sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub> = <sup>1</sup>&frasl;<sub>n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}x<sup>(i)</sup><sub>j</sub>; _where_ j = 0 to k.
+
+The update equation for &theta;,
+
+Repeat untill Convergence,
+&theta;<sub>j</sub>:= &theta;<sub>j</sub> - &alpha;<sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
+
+&alpha; varies between 0 and 1 and needs to be optimized. After every update we calculate J(&theta;) and observe the change. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
+
+**Note:** The update for the &theta;s happen simultaneously.
+
+The process described above is called **Batch Gradient Descent**.
+
+An alternate process is **Stochastic Gradient Descent** where we update &theta;s based on 1 data point at time. The data points are chosen randomly(stochastic). Another alternate approach is **Mini Batch Gradient Descent** where we update &theta;s based on certain fixed no. of data points.
 
 **Code** 
 - Gradient Descent
