@@ -129,7 +129,7 @@ An alternate process is **Stochastic Gradient Descent** where we update &theta;s
 **Code** 
 - Gradient Descent
 
-```
+```python
 import numpy as np
 import pandas as pd
 
