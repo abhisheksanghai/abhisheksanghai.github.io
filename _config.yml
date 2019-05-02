@@ -4,3 +4,4 @@
 
 name: Abhishek Sanghai, Exploration mode on!
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
