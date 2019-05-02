@@ -4,8 +4,6 @@ title: "Introduction to Machine Learning"
 date: 2019-05-02
 ---
 
-# Machine Learning
-
 ML models are a tool useful to establish a relationship or find patterns in the data. As it is wisely said, all models are wrong, only some are useful. The results from the models should always be verified to make sense from the business perspective.
 ML is majorly divided into two types namely, **supervised and unsupervised learning**.
 
