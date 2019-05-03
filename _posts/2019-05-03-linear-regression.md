@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linear Regression"
-date: 2019-05-02
+date: 2019-05-03
 ---
 
 ### Linear Regression
