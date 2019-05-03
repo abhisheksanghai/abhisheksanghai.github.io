@@ -22,7 +22,7 @@ _where_, Y is actual dependent variable,
 x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
 h<sub>&theta;</sub>(x) is predicted dependent variable,
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
-&straightepsilon; is the error term.
+&epsilon; is the error term.
 
 The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
 
@@ -75,27 +75,27 @@ So, if increase in p does not increases R<sup>2</sup> as it should, Adj R<sup>2<
 
 This method is based on Linear Algebra. 
 
-Y = X&beta; + &straightepsilon;
+Y = X&beta; + &epsilon;
 
 Matrix Representation - 
 
 ![Normal_Equation](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear_Regression_Help_files/Normal_Equation.PNG)
 
-So, &straightepsilon; = Y - X&beta;
+So, &epsilon; = Y - X&beta;
 
-Now, our error metric SSE can be represented in matrix form as, &straightepsilon;&#884;&straightepsilon; = &straightepsilon;<sub>1</sub><sup>2</sup> + &straightepsilon;<sub>2</sub><sup>2</sup> + ... + &straightepsilon;<sub>n</sub><sup>2</sup> = &Sigma;&straightepsilon;<sub>i</sub><sup>2</sup>
+Now, our error metric SSE can be represented in matrix form as, &epsilon;&#884;&epsilon; = &epsilon;<sub>1</sub><sup>2</sup> + &epsilon;<sub>2</sub><sup>2</sup> + ... + &epsilon;<sub>n</sub><sup>2</sup> = &Sigma;&epsilon;<sub>i</sub><sup>2</sup>
 
-Therefore, &straightepsilon;&#884;&straightepsilon; = (Y - X&beta;)&#884;(Y - X&beta;)
+Therefore, &epsilon;&#884;&epsilon; = (Y - X&beta;)&#884;(Y - X&beta;)
 
-&#8658; &straightepsilon;&#884;&straightepsilon; = Y&#884;Y - Y&#884;X&beta; - &beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
+&#8658; &epsilon;&#884;&epsilon; = Y&#884;Y - Y&#884;X&beta; - &beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
 
 Here, 2nd and 3rd term on the RHS are transpose of each other. Also, they are scalar values with dimension (1 x 1). So, they are equal to each other.
 
-&#8658; &straightepsilon;&#884;&straightepsilon; = Y&#884;Y - 2&beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
+&#8658; &epsilon;&#884;&epsilon; = Y&#884;Y - 2&beta;&#884;X&#884;Y + &beta;&#884;X&#884;X&beta;
 
 Now, the above equation is a function of &beta; and our objective is to minimize it. In order to do this, we differentiate the equation with respect to &beta; and equate to Zero.
 
-&#8658; <sup>&#x2202;(&straightepsilon;&#884;&straightepsilon;)</sup>&frasl;<sub>&#x2202;&beta;</sub> = -2X&#884;Y + 2X&#884;X&beta; = 0
+&#8658; <sup>&#x2202;(&epsilon;&#884;&epsilon;)</sup>&frasl;<sub>&#x2202;&beta;</sub> = -2X&#884;Y + 2X&#884;X&beta; = 0
 
 &#8658; X&#884;X&beta; = X&#884;Y
 
