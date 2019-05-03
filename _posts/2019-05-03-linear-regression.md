@@ -47,7 +47,7 @@ Intutively, SST is the error of Y with no independent variable (Total variance) 
 
 So, **SSR = SST-SSE**
 
-![Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear_Regression_Help_files/Linear_Regression.png)
+![Linear Regression](Linear_Regression_Help_files/Linear_Regression.png)
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
