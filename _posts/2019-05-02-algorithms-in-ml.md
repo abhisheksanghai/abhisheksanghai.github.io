@@ -26,6 +26,7 @@ There are a lot of cases where we take an alternate route in order to deal with 
 ### Classification Models
 
 - Decision Tree Model
+
 There are quite a few different algorithms used for building a decision tree.
 (to be updated)
 
