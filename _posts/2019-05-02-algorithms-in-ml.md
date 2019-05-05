@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to Machine Learning"
+title: "Algorithms in Machine Learning"
 date: 2019-05-02
 ---
 
@@ -15,6 +15,20 @@ Regression Models have continuous variable as outcome while classification Model
 
 ### Regression Models
 
-1. [Linear Regression](https://abhisheksanghai.github.io/2019/05/03/linear-regression)
+- [Linear Regression](https://abhisheksanghai.github.io/2019/05/03/linear-regression) 
+
+There are a lot of cases where we take an alternate route in order to deal with the overfitting problems. That's when the regularization comes into the picture. Regularization allows us to add a penalty parameter that slightly alters our objective function and doesn't allow us to reach the true minimum. Following are different types of regularization for Linear Regression - 
+
+1. [Lasso Regression or L1 Regularization]()
+2. [Ridge Regression or L2 Regularization]()
+3. [Elastic Net Regression]()
+
+### Classification Models
+
+- Decision Tree Model
+There are quite a few different algorithms used for building a decision tree.
+(to be updated)
+
+
 
 
