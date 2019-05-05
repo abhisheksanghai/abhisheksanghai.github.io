@@ -25,9 +25,13 @@ There are a lot of cases where we take an alternate route in order to deal with 
 
 ### Classification Models
 
-- Decision Tree Model
+- [Logistic Regression]()
+- [Decision Tree]()
 
-There are quite a few different algorithms used for building a decision tree.
+## Unsupervised Learning
+
+These models do not have any outcome variables defined rather they are majorly used for segmenting data into unknown groups with similar characteristics. All the **Clustering Models** fall under this category
+
 (to be updated)
 
 
