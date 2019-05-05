@@ -71,7 +71,7 @@ So, if increase in p does not increases R<sup>2</sup> as it should, Adj R<sup>2<
 
 **Theory**
 
-1. Normal Equation Method - 
+- Normal Equation Method - 
 
 This method is based on Linear Algebra. 
 
@@ -107,7 +107,7 @@ Now, the above equation is a function of &beta; and our objective is to minimize
 
 If we analyze the above equation, the first term X&#884;X is the covariance matrix of independent variables while second term X&#884;Y is covariance between X and Y. This is when we consider the variables in their standardized form.
 
-2. Gradient Descent - 
+- Gradient Descent - 
 
 Gradient tells us the slope of a function at a given position. **It is a vector which always points towards the maximum increase of a function**. So, the general procedure is to define the objective function, randomly initialize parameters and gradually move in the opposite direction as that of the gradient in order to minimize the function's value.
 
