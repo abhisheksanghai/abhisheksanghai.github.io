@@ -15,6 +15,6 @@ Regression Models have continuous variable as outcome while classification Model
 
 ### Regression Models
 
-1. [Linear Regression](https://github.com/abhisang32/abhisang32.github.io/blob/master/Linear%20Regression.md)
+1. [Linear Regression](https://abhisheksanghai.github.io/2019/05/03/linear-regression)
 
 
