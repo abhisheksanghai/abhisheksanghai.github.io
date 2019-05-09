@@ -46,3 +46,15 @@ ul.posts li {
 p.meta {
     color: #999;
 }
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2.blurb.image { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
