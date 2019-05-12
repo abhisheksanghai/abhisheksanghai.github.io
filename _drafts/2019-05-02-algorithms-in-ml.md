@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Algorithms in Machine Learning"
 date: 2019-05-02
 ---
