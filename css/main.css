@@ -46,3 +46,7 @@ ul.posts li {
 p.meta {
     color: #999;
 }
+
+img.pic {
+  border-radius: 50%;
+}
