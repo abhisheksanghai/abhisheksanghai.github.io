@@ -20,18 +20,11 @@ banking or agriculture. Businesses use it to decide their marketing strategies. 
 market. Recommendation Systems are used to sell similar products to their customers and the list goes on. 
 
 ### Prerequisites
-So, what does it take to learn machine learning.
+If you are just starting out, I would recommend to get yourself acquainted with Statistics and Probability. 
+The book [An Introduction to Statisctical Learning](https://www.amazon.in/Introduction-Statistical-Learning-Applications-Statistics/dp/1461471370) is a very common place to start. Although, I personally prefer [Complete Business Statistics](https://www.flipkart.com/complete-business-statistics-7th/p/itmfbt22geamkhfg). Free PDF versions are available online for the books.
 
+Linear Algebra and Calculus are also required but you wont be using them in day to day workings most of the time unless you want to go for the deeper understanding of how different algorithms work. Having said that, they will definetly help you be more confident and thorough in your approaches.
 
-Buzz of AI
-
-What is Machine Learning
-
-Examples
-
-Why Machine Learning
-
-Prerequisites
 
 
 
