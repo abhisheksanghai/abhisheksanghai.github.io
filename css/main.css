@@ -47,7 +47,7 @@ p.meta {
     color: #999;
 }
 
-img.pic {
+.profile-image {
   border-radius: 50%;
   display: block;
   margin-left: auto;
