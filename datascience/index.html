@@ -2,10 +2,35 @@
 layout: default
 title: My Data Science Blog
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+    <header class="header">
+        <div class="container">                       
+            <div class="profile-content pull-left">
+                <h1>{{ page.title }}</h1>
+            </div><!--//profile-->
+        </div><!--//container-->
+    </header><!--//header-->
+
+<div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                          
+                            <ul class="posts">
+
+	  			{% for post in site.posts %}
+	    				<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  			{% endfor %}
+				    
+			    </ul>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+	    </div><!--//primary-->
+   </div><!--//row-->
+</div><!--//masonry-->
+
