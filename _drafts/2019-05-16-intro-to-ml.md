@@ -6,10 +6,7 @@ date: 2019-05-16
 ---
 
 ### What is Data Science 
-Data Science is the field of science which allows us to extract meaning out of data. It started with statistics at its core and developed 
-over time as we upgraded ourselves to store and analyze data. In recent times, there has been a significant surge in our capability 
-to generate and store data, credits to social media. Based on the reports floating online, over 90% of the total data we have was 
-created over last couple of years. 
+Data Science is the field of science which allows us to extract meaning out of data. It started with statistics at its core and developed over time as we upgraded ourselves to store and analyze data. In recent times, there has been a significant surge in our capability to generate and store data, credits to social media. Based on the reports floating online, over 90% of the total data we have, was created over last couple of years. 
 
 ### Machine Learning
 Machine Learning is the branch of data science through which we go one step ahead from basic statistics and deal with predictions.
@@ -23,7 +20,7 @@ banking or agriculture. Businesses use it to decide their marketing strategies. 
 market. Recommendation Systems are used to sell similar products to their customers and the list goes on. 
 
 ### Prerequisites
-So, what does it take to learn machine learning 
+So, what does it take to learn machine learning.
 
 
 Buzz of AI
