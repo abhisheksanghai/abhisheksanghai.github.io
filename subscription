@@ -1,7 +1,8 @@
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScjNbwVpawMhIUmYWwWnr8OToCcLHWPR0eQSRuR1CGV8m4QWA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-  First name:<br>>
-  Email:<br>
+  Email address:<br>
   <input type="text" name="email"><br>
+  Name:<br>
+  <input type="text" name="name">
   <input type="submit" value="Submit">
 </form>
 
