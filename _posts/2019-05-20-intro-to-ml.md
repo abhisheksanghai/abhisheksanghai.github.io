@@ -13,7 +13,7 @@ over last couple of years.
 
 ### Machine Learning
 Machine Learning is the branch of data science through which we go one step ahead from basic statistics and deal with predictions.
-These predictions helps a machine learn on its own and execute tasks. In order to help these machines learn patterns in the data 
+These predictions help a machine learn on its own and execute tasks. In order to help these machines learn patterns in the data 
 and generate meaningful insights, a whole lot of algorithms have been designed. We will discuss about these algorithms in the next post.
 
 ### Applications of Machine Learning
