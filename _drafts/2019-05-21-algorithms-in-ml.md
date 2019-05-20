@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Algorithms in Machine Learning"
-date: 2019-05-02
+date: 2019-05-21
 ---
 
 ML models are a tool useful to establish a relationship or find patterns in the data. As it is wisely said, all models are wrong, only some are useful. The results from the models should always be verified to make sense from the business perspective.
