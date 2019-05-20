@@ -44,22 +44,11 @@ layout: default
                     <div class="section-inner">
                         <h2 class="heading sr-only">Subscription</h2>
                         <div class="content">
-                            <form name="gform" id="gform" enctype="text/plain" action="https://usebasin.com/f/e5071c912025" target="hidden_iframe" onsubmit="submitted=true;">
-  				Email address:<br>
-  				<input type="text" name="email"><br>
-  				<input type="submit" value="Subscribe">
+                            <form action="https://usebasin.com/f/e5071c912025" method="POST">
+				<label for="email-address">Email Address</label>
+				<input type="email" id="email" name="email" required>
+				<button type="submit">Subscribe</button>
 			    </form>
-
-			    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-			    <script src="assets/js/jquery.min.js"></script>
-			   <script type="text/javascript">var submitted=false;</script>
-			    <script type="text/javascript">
-			    $('#gform').on('submit', function(e) {
-  				$('#gform *').fadeOut(2000);
-  				$('#gform').prepend('Subscription Successful!');
-  			    });
-			    </script>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
