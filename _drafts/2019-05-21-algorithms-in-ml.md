@@ -60,11 +60,24 @@ Clustering refers to dividing a population into multiple groups such that the th
 
 ### Association Rules
 
-These are used
-
+1. Apriori Algorithm
 
 ### Dimensionality Reduction
 
+1. PCA
+
+2. SVD
+
+3. LDA
+
+**Neural Networks**
+
+Now that we have these out of the way, let's talk about Ensemble Learning
+## Ensemble Learning
+
+1. Bagging
+
+2. Boosting
 
 
 
