@@ -33,7 +33,7 @@ One way to deal with this is regularization. Regularization allows us to add a p
 
 ### Classification Models
 
-1. Logistic Regression - It is a classification technique which gives out probability of an event ocuuring based on a transformed linear equation. The probability is then used for taking the decision.
+1. Logistic Regression - It is a classification technique which gives out probability of an event occuring based on a transformed linear equation. The probability is then used for taking the decision.
 
 2. Decision Tree - These are tree based approaches that gives out a set of rules to determine the output. There are multiple algorithms 
 used for decision tree.
@@ -50,7 +50,21 @@ Let's move onto Usupervised Learning now.
 
 These models do not have any outcome variables defined,rather, they are majorly used for segmenting data into unknown groups with similar characteristics. All the **Clustering Models** fall under this category. **Association Rules** and **Dimensionality Reduction** are also considered as Unsupervised Learning.
 
-(to be updated)
+### Clustering
+
+Clustering refers to dividing a population into multiple groups such that the the data points in the same group are more similar to each other than other groups.
+
+1. K-Means Clustering
+
+2. Hierarchical Clustering
+
+### Association Rules
+
+These are used
+
+
+### Dimensionality Reduction
+
 
 
 
