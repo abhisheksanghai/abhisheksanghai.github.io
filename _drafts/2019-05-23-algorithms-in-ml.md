@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Algorithms in Machine Learning"
-date: 2019-05-22
+date: 2019-05-23
 ---
 
 Model refers to a rule, equation or a structure that helps a machine take decisions. Machine Learning (ML) models are in general, a tool useful to establish relationships or find patterns in the data. But as all the good things come with caution, so does Machine Learning. As it is wisely said, all models are wrong, only some are useful. The results from the models should always be verified to make sense from the business perspective.
@@ -10,7 +10,7 @@ ML is majorly divided into two types namely, **supervised and unsupervised learn
 
 ## Supervised Learning
 
-In supervised learning, we have the outcome defined in the form of a variable and the objective is to reach as close as possible to this outcome variable (dependent variable). For this purpose, we use a lot of external information that might help us determine what the value of this outcome variable could be. We call these external factors as predictors or independent variables. These models are of two types i.e. **Regression and Classification**. For achieving our objective, we define an error metric and try to minimize it.
+In supervised learning, we have the outcome defined in the form of a variable and the objective is to reach as close as possible to this outcome variable (dependent variable). For this purpose, we use a lot of external information that might help us determine what the value of this outcome variable could be. We call these external factors as predictors or independent variables. These models are of two types i.e. **Regression and Classification**. For achieving our objective, we define an error metric (that tells us the difference between actual and predicted values) and try to minimize it.
 
 Regression Models have continuous variable as outcome while classification Models are defined for categorical outcome variables.
 
@@ -25,7 +25,7 @@ are in the form of a linear equation,  y = &theta;x + c, where y is the dependen
 
 A lot of times, the predictions turn out pretty accurate for the data model was built on, but it fails to give good results for out of sample data. This phenomena is called **overfitting**. This happens because the model alongwith learning the required pattern in the data, learns the noise in the data as well. So, if the out of sample data does not have the noisy pattern, it's prediction will be bad.
 
-One way to deal with this is regularization. Regularization allows us to add a penalty parameter that slightly alters our objective function and doesn't allow us to reach the true minimum and in turn prevents the model from learning noise in the data. Following are different types of regularization commonly used for Linear Regression - 
+One way to deal with this is **regularization**. Regularization allows us to add a penalty parameter to the error metric that slightly alters our objective function and doesn't allow us to reach the true minimum and in turn prevents the model from learning noise in the data. Following are different types of regularization commonly used for Linear Regression - 
 
 - Lasso Regression or L1 Regularization
 - Ridge Regression or L2 Regularization
@@ -44,7 +44,7 @@ used for decision tree.
 
 5. K-NN Classification - In these models, we look for outcome of k nearest neighbouring data points in order to make a decision.
 
-Let's move onto Usupervised Learning now.
+Let's move onto Unsupervised Learning now.
 
 ## Unsupervised Learning
 
@@ -52,7 +52,7 @@ These models do not have any outcome variables defined,rather, they are majorly 
 
 ### Clustering
 
-Clustering refers to dividing a population into multiple groups such that the the data points in the same group are more similar to each other than other groups.
+Clustering refers to dividing a population into multiple groups such that the the data points in the same group are more similar to each other than to data points from other groups.
 
 1. K-Means Clustering - These models work with euclidian distance between data points to form clusters and are the most preferred method for clustering. 
 
@@ -76,7 +76,8 @@ Often in model building exercise, we find ourselves dealing with far more no. of
 
 Ensemble Methods are great way to improve the model performance. These techniques combine results from multiple models in order to achieve this. There are two types of ensemble Methods i.e. **Bagging and Boosting**.
 
-1. Bagging - These methods use models running parallely and combine results to give more credibility to the results. **RandomForest** is a very common example of Bagging Method.
+1. Bagging - These methods use models that run independent of each other and combine outcomes to give more credibility to the results.
+These are known to be parallel methods. **RandomForest** is a very common example of Bagging Method.
 
 2. Boosting - These methods are sequential in nature and use errors from previous model as a way of improving next model.
 
