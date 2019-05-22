@@ -32,16 +32,21 @@ Often in model building exercise, we find ourselves dealing with far more no. of
 
 2. Singular Value Decomposition (SVD) - This is a matrix decomposition method. It aims to reduce the input matrix to a lower rank matrix which is believed to be close representation the original matrix.
 
-3. Linear Discriminant Analysis (LDA) - This is a dimensionality reduction technique which is also sometimes used as a classifiation algorithm. 
+3. Linear Discriminant Analysis (LDA) - This is a dimensionality reduction technique which is also sometimes used as a classification algorithm. 
 
-**Neural Networks**
-
-Now that we have these out of the way, let's talk about Ensemble Learning
 ## Ensemble Learning
 
-1. Bagging
+Ensemble Methods are great way to improve the model performance. These techniques combine results from multiple models in order to achieve this. There are two types of ensemble Methods i.e. **Bagging and Boosting**.
 
-2. Boosting
+1. Bagging - These methods use models running parallely and combine results to give more credibility to the results. **RandomForest** is a very common example of Bagging Method.
+
+2. Boosting - These methods are sequential in nature and use errors from previous model as a way of improving next model.
+
+## Deep Learning
+
+Deep Learning is the branch of Machine Learning where we deal with Neural Networks. The structure of Neural Networks are supposed to be a replication of human brain and are alternatives to the techniques mentioned above. We will not go into details of this section as of now.
+
+The techniques mentioned in this post are not an exhaustive but contains commonly used algorithms. I will be attempting to describe each of these in separate posts.
 
 
 
