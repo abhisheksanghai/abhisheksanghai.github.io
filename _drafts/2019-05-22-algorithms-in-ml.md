@@ -84,7 +84,7 @@ Ensemble Methods are great way to improve the model performance. These technique
 
 Deep Learning is the branch of Machine Learning where we deal with Neural Networks. The structure of Neural Networks are supposed to be a replication of human brain and are alternatives to the techniques mentioned above. We will not go into details of this section as of now.
 
-The techniques mentioned in this post are not an exhaustive but contains commonly used algorithms. I will be attempting to describe each of these in separate posts.
+The techniques mentioned in this post are not exhaustive but contains commonly used algorithms. I will be attempting to describe each of these in separate posts.
 
 
 
