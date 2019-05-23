@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Model Building"
+title: "Journey of Data Science Project"
 date: 2019-05-23
 ---
 
