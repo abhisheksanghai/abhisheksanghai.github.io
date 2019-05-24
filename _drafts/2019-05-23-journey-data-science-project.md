@@ -27,7 +27,18 @@ Now that we have a clear understanding of what the business requirements are, we
 
 Once we have an execution plan in place, we start gathering data as per the hypothesis. This might require the help of a data engineer depending on the scale of the data and requirement of database. If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
 
--- identify sources, data from clients, macro economic (external data)
+-- identify sources - data from clients, macro economic (external data)external sources
+-- structured - RDBMS (Oracle, Postgresql, Mysql, teradata,  Sql  Server, Redshift etc), flat files
+-- unstructred - (NoSql means not only sql)- HDFS  (Hadoop distributed file system, hive,(impala may be) is used) ,MongoDB, Cassandra, hbase, flat files etc (handles structured as well)
+-- Datawarehouse vs Data mart (specfic type of data)(subset of data warehouse)(structured)
+-- Data Lake
+-- APIs (GDPR)
+
+-- spark is used for in-memory data processing (to cope up with disadvantage of hadoop)
+-- Apache 
+
+
+
 -- Databases, excel, csv, web scraping, Web APIs for Facebook, Twitter etc
 -- Databases - MYSQL, Postgre sql, MongoDB
 
