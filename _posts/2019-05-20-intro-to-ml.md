@@ -24,7 +24,7 @@ market. Recommendation Systems are used to sell similar products to the customer
 
 ### Prerequisites
 If you are just starting out, I would recommend to get yourself acquainted with Statistics and Probability. 
-The book [An Introduction to Statisctical Learning](https://www.amazon.in/Introduction-Statistical-Learning-Applications-Statistics/dp/1461471370) 
+The book [An Introduction to Statistical Learning](https://www.amazon.in/Introduction-Statistical-Learning-Applications-Statistics/dp/1461471370) 
 is a very common place to start. Although, I personally prefer [Complete Business Statistics](https://www.flipkart.com/complete-business-statistics-7th/p/itmfbt22geamkhfg).
 Free PDF versions are available online for the books.
 
