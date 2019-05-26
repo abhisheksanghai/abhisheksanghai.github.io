@@ -17,7 +17,15 @@ Now that we have a clear understanding of what the business requirements are, we
 
 ### 3. Data Gathering
 
-Next, we start gathering data from various sources. This might require the help of a data engineer depending on the scale and complexity of the data. If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
+Next, we start gathering data from various sources. This might require the help of a data engineer depending on the scale and complexity of the data. First, we need to identify all the sources from which we will obtain the data. Different data sources might be -
+- Clients giving access to their database.
+- Clients trasferring data through flat files.
+- External Sources - This might involve scrapping data from various websites.
+Some social media platforms provide their own APIs (Application Program Interface) for accessing data. Although the introduction of GDPR(General Data Protection Regulation) means one cannot access a user's data without their consent. Appropriate changes have been made in the APIs accordingly.
+
+
+
+If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
 
 -- identify sources - data from clients, macro economic (external data)external sources
 -- structured - RDBMS (Oracle, Postgresql, Mysql, teradata,  Sql  Server, Redshift etc), flat files
