@@ -17,7 +17,7 @@ Now that we have a clear understanding of what the business requirements are, we
 
 ### 3. Data Gathering
 
-Next, we start gathering data from various sources. This might require the help of a data engineer depending on the scale of the data and requirement of a database. If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
+Next, we start gathering data from various sources. This might require the help of a data engineer depending on the scale and complexity of the data. If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
 
 -- identify sources - data from clients, macro economic (external data)external sources
 -- structured - RDBMS (Oracle, Postgresql, Mysql, teradata,  Sql  Server, Redshift etc), flat files
