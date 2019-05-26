@@ -9,12 +9,7 @@ Although knowledge about various algorithms available is going to be very useful
 
 ### 1. Defining Objective
 
-The first step of any model building process has to be defining the objective. It's very critical to be on the same page with your stakeholders in terms of what is expected at the end of the project. It's also important to get an understanding of how the results will be used for implementation as it might affect the approach taken during the exercise.
-
--- understand business objectives and requirements
--- understand how business functions and how it will use the data
--- how the results will impact the decision making
--- different departments in your client's organization might want different results
+The first step of any model building process has to be defining the objective. This will involve understanding how a business functions (domain knowledge is very crucial) and how it will use the data. It's very critical to be on the same page with your stakeholders in terms of what is expected at the end of the project. It's also important to get an understanding of how the results will be used for implementation as it might affect the approach taken during the exercise. Also, various departments within an organization might consume the results in a very different manner. Someone working on the field might want a very granular level insights while on the other hand someone like a CEO might just want info about Key Performnce Indicators(KPIs). Overall, this step includes mapping out business objectives.
 
 ### 2. Transforming Business to Modelling Goals
 
