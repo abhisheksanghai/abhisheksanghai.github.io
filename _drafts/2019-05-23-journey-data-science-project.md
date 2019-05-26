@@ -22,7 +22,7 @@ Next, we start gathering data from various sources. This might require the help 
 - Clients trasferring data through flat files.
 - External Sources - This might involve scrapping data from various websites.
 
-Some social media platforms provide their own APIs (Application Program Interface) for accessing data. Although the introduction of GDPR(General Data Protection Regulation) means one cannot access a user's data without their consent. Appropriate changes have been made in the APIs accordingly.
+Some social media platforms provide their own APIs (Application Program Interface) for accessing data. But the introduction of GDPR(General Data Protection Regulation) means one cannot access a user's data without their consent. Appropriate changes have been made in the APIs accordingly.
 
 
 
