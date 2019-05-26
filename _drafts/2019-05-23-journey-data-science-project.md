@@ -11,12 +11,9 @@ Although knowledge about various algorithms available is going to be very useful
 
 The first step of any model building process has to be defining the objective. This will involve understanding how a business functions (domain knowledge is very crucial) and how it will use the data. It's very critical to be on the same page with your stakeholders in terms of what is expected at the end of the project. It's also important to get an understanding of how the results will be used for implementation as it might affect the approach taken during the exercise. Also, various departments within an organization might consume the results in a very different manner. Someone working on the field might want a very granular level insights while on the other hand someone like a CEO might just want info about Key Performance Indicators(KPIs). Overall, this step includes mapping out business objectives.
 
-### 2. Transforming Business to Modelling Goals
+### 2. Transforming Business Objectives to Data Goals
 
-Now that we have a clear understanding of what the business requirements are, we have to think about the execution plan. We need to decide on the data required to carry out modelling exercise. This step will also involve hypothesis creation where we form a set of hypothesis for our objectives. This is going to be helpful in the data exploration stage. We also decide on the type of model (not specific algorithm) to be used, if required.
-
--- hypothesis creation involves interviewing subject matter experts in the company/client's side
--- this should be done before data gathering. it helps you give additional suggestions to the clients.
+Now that we have a clear understanding of what the business requirements are, we have to think about the data required for project execution. This step is often missed by the practitioners or is considered once the data is available from the clients end. This will lead to lost opportunity of giving valuable suggestions to your client for tracking additional data as once we have seen the data, it becomes difficult to think about all the possible factors from an open mind. For this, we should interview the subject matter experts from the client's side as well as from our own organization. They will help us create hypothesis based on their domain knowledge. We will then use these hypothesis to come up with the set of data required. The list of hypothesis collated is also going to be helpful in the data exploration stage as we will have a direction to move into as try to test them for their validity.
 
 ### 3. Data Gathering
 
