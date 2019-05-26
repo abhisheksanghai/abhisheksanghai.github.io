@@ -5,7 +5,7 @@ title: "Journey of Data Science Project"
 date: 2019-05-23
 ---
 
-Although knowledge about various algorithms available is going to be very useful in coming up with the solutions but the process of model building involves much more than just agorithms. You need to have data in the usable format and with correct features for the model to give useful results. In fact, the data preprocessing takes up most of the time in model building. Let's list down the steps to be followed. 
+As we start working on an Analytics Project, we tend to think about the algorithms we are going to use and hence, as a data scientist our focus never really shifts to the other very important attributes. Although knowledge about various algorithms available is going to be very useful in coming up with the solutions but the process of model building involves much more than just agorithms. We need to have data in the usable format and with correct set of features for the model to give useful results. Without proper business knowledge infused into the data preparation, the results out a model is most probably going to be just garbage. In fact, the data preprocessing takes up most of the time in a model building exercise. So, let's list down the steps to be followed while executing a Machine Learning Project -
 
 ### 1. Defining Objective
 
