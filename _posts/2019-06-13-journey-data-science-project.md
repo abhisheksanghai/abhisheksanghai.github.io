@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Journey of Data Science Project"
-date: 2019-05-23
+date: 2019-06-13
 ---
 
 As we start working on an Analytics Project, we tend to think about the algorithms we are going to use and hence, as a data scientist our focus never really shifts to the other very important attributes. Although knowledge about various algorithms available is going to be very useful in coming up with the solutions but the process of model building involves much more than just agorithms. We need to have data in the usable format and with correct set of features for the model to give useful results. Without proper business knowledge infused into the data preparation, the results out a model is most probably going to be just garbage. In fact, the data preprocessing takes up most of the time in a model building exercise. So, let's list down the steps to be followed while executing a Machine Learning Project -
@@ -24,25 +24,6 @@ Next, we start gathering data from various sources. This might require the help 
 
 Some social media platforms provide their own APIs (Application Program Interface) for accessing data. But the introduction of GDPR(General Data Protection Regulation) means one cannot access a user's data without their consent. Appropriate changes have been made in the APIs accordingly.
 
-
-
-If there are large no. of data sources involved, a data mart has to be created to streamline the access of data.
-
--- identify sources - data from clients, macro economic (external data)external sources
--- structured - RDBMS (Oracle, Postgresql, Mysql, teradata,  Sql  Server, Redshift etc), flat files
--- unstructred - (NoSql means not only sql)- HDFS  (Hadoop distributed file system, hive,(impala may be) is used) ,MongoDB, Cassandra, hbase, flat files etc (handles structured as well)
--- Datawarehouse vs Data mart (specfic type of data)(subset of data warehouse)(structured)
--- Data Lake
--- APIs (GDPR)
-
--- spark is used for in-memory data processing (to cope up with disadvantage of hadoop)
--- Apache 
-
-
-
--- Databases, excel, csv, web scraping, Web APIs for Facebook, Twitter etc
--- Databases - MYSQL, Postgre sql, MongoDB
-
 ### 4. Data Preprocessing / Exploratory Analysis
 
 Once we have all the data from the required sources available to us at a single location, we transform it into usable form. Most of the times, raw data won't be available in a format that can directly be used to generate insights and hence, their transformation is a necessary step. Next, we start exploring data for possible insights. Exploratory analysis can be split into three levels - Univariate Analysis, Bivariate Analysis and Multivariate Analysis. Univariate analysis involves looking for missing values and identifying the distribution of each variable independently. Missing values and outlier values are treated as per the requirement and business logic involved. In bivariate and multivariate analysis we try to look for relationship between two or more variables that might help us come up with certain variable transformations required (Most of the times we are looking for ways to create linear relationships). These steps also help us explore various features that might be created in order to solve the problem at hand. While this entire exercise goes on, we also have to test the hypothesis we designed earlier and verify them for their validity.
@@ -54,11 +35,3 @@ Post Exploratory Analysis comes the time for using some algorithms. For this, we
 ### 6. Model Deployment and Maintenance
 
 Now that we have our model tested and ready to be in action, we need to deploy it. By deployment, we mean transferring the analytical results into effective decision making. This might be done through Business Intelligence Reports or we might need to integrate the model with clients decision making applications. Post this, we observe the model results on field testing and referesh the model at regular time intervals if required. We might also need to rebuild the model after certain time period if the model results deteriorates beyond acceptable limits.
-
-
-
-
-
-
-
-
