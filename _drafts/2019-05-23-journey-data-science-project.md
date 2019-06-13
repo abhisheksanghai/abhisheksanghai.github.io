@@ -19,7 +19,7 @@ Now that we have a clear understanding of what the business requirements are, we
 
 Next, we start gathering data from various sources. This might require the help of a data engineer depending on the scale and complexity of the data. First, we need to identify all the sources from which we will obtain the data. Different data sources might be -
 - Clients giving access to their database.
-- Clients trasferring data through flat files.
+- Clients transferring data through flat files.
 - External Sources - This might involve scrapping data from various websites.
 
 Some social media platforms provide their own APIs (Application Program Interface) for accessing data. But the introduction of GDPR(General Data Protection Regulation) means one cannot access a user's data without their consent. Appropriate changes have been made in the APIs accordingly.
