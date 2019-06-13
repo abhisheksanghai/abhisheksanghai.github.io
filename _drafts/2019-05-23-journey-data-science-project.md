@@ -45,13 +45,15 @@ If there are large no. of data sources involved, a data mart has to be created t
 
 ### 4. Data Preprocessing / Exploratory Analysis
 
-
+Once we have all the data from the required sources available to us at a single location, we transform it into usable form. Most of the times, raw data won't be available in a format that can directly be used to generate insights and hence, their transformation is a necessary step. Next, we start exploring data for possible insights. Exploratory analysis can be split into three levels - Univariate Analysis, Bivariate Analysis and Multivariate Analysis. Univariate analysis involves looking for missing values and identifying the distribution of each variable independently. Missing values and outlier values are treated as per the requirement and business logic involved. In bivariate and multivariate analysis we try to look for relationship between two or more variables that might help us come up with certain variable transformations required (Most of the times we are looking for ways to create linear relationships). These steps also help us explore various features that might be created in order to solve the problem at hand. While this entire exercise goes on, we also have to test the hypothesis we designed earlier and verify them for their validity.
 
 ### 5. Model Selection and Validation
 
-
+Post Exploratory Analysis comes the time for using some algorithms. For this, we have to first split the data into 2 sets i.e. Train and Test. Train data (usually 70-80% of total) is used for developing the model while test data (ususally 20-30% of total) is used for verifying if the model holds good on unseen data. More often cross validation is considered a better way of testing this where we create multiple sets of train and test data and look for consistency in the results. This helps us in understanding the robustness and reliability of the model. In case the model does not yields desired results, we might try different algorithms or look for feature engineering and create new variables in order to improve model performance. Ensemble Methods are also a great way of improving model performance.
 
 ### 6. Model Deployment and Maintenance
+
+Now that we have our model tested and ready to be in action, we need to deploy it. By deployment, we mean transferring the analytical results into effective decision making. This might be done through Business Intelligence Reports or we might need to integrate the model with clients decision making applications. Post this, we observe the model results on field testing and referesh the model at regular time intervals if required. We might also need to rebuild the model after certain time period if the model results deteriorates beyond acceptable limits.
 
 
 
