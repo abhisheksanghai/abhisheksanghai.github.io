@@ -34,24 +34,24 @@ Consider the situation where we do not have any independent variables. One of th
 
 Y&#773; = h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>, where &theta;<sub>o</sub> is a constant.
 
-In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y(x)-Y&#773;)<sup>2</sup> **(also called variance of Y)**
+In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y(x) - Y&#773;)<sup>2</sup> **(also called variance of Y)**
 
 The error SST is considered as a reference for Linear Regression Models to be evaluated as we start including independent variables.
 This is because, the error metric is supposed to decline with increase in variables (otherwise including the variable is useless).
 
 _Case 2:_
 
-After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(x)-h<sub>&theta;</sub>(x))<sup>2</sup> = &Sigma;(Y(x)-Y&#770;(x))<sup>2</sup>
+After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(x) - h<sub>&theta;</sub>(x))<sup>2</sup> = &Sigma;(Y(x) - Y&#770;(x))<sup>2</sup>
 
 Intutively, SST is the error of Y with no independent variable (Total variance) while SSE is the error of Y with independent variables included (Unexplained variance). From this, we can compute the variance that model in _case 2_ is able to explain compared to _case 1_. Let's call it SSR (Sum of Square of Regression also called explained variance). 
 
-So, **SSR = SST-SSE**
+So, **SSR = SST - SSE**
 
 ![Linear Regression](/images/Linear_Regression.png)
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
-R<sup>2</sup> = SSR/SST = (SST-SSE)/SST = 1-(SSE/SST)
+R<sup>2</sup> = SSR/SST = (SST - SSE)/SST = 1 - (SSE/SST)
 
 R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> &#8658; better the model. **(Caution! Overfitting)**
 
@@ -63,7 +63,7 @@ Once the model is built on the data (called as train data), we have to test it a
 
 In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed, Adjusted R-Squared.
 
-Adj R<sup>2</sup> = 1 - <sup>(1-R<sup>2</sup>)*(n-1)</sup>&frasl;<sub>(n-p-1)</sub>, _where_, n is no. of data points and p is no. of variables.
+Adj R<sup>2</sup> = 1 - <sup>(1 - R<sup>2</sup>)*(n - 1)</sup>&frasl;<sub>(n - p - 1)</sub>, _where_, n is no. of data points and p is no. of variables.
 
 Looking at the equation, as p increases &#8658; R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases,
 On the other hand, as p increases &#8658; Adj R<sup>2</sup> decreases.
