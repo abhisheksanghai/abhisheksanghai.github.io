@@ -65,9 +65,9 @@ In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R
 
 Adj R<sup>2</sup> = 1 - <sup>(1 - R<sup>2</sup>)*(n - 1)</sup>&frasl;<sub>(n - p - 1)</sub>, _where_, n is no. of data points and p is no. of variables.
 
-Looking at the equation, as p increases &#8658; R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases,
-On the other hand, as p increases &#8658; Adj R<sup>2</sup> decreases.
-So, if increase in p does not increases R<sup>2</sup> as it should, Adj R<sup>2</sup> will decrease. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
+From the equation above, as p increases &#8658; Keeping R<sup>2</sup> constant would mean Adj R<sup>2</sup> decreases, but 
+Since we Know that as p increases &#8658; R<sup>2</sup> increases &#8658; and from the equation again, as R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases.
+So, it's a battle between p and R<sup>2</sup> that will decide if  Adj R<sup>2</sup> will increase or decrease. If increase in p did not increase R<sup>2</sup> to a certain limit, Adj R<sup>2</sup> decreases. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
 
 **Theory**
 
