@@ -77,7 +77,7 @@ Y = X&beta; + &epsilon;
 
 Matrix Representation - 
 
-![Normal_Equation](/images/Linear Regression/Normal_Equation.PNG)
+![Normal_Equation](/images/Normal_Equation.PNG)
 
 So, &epsilon; = Y - X&beta;
 
