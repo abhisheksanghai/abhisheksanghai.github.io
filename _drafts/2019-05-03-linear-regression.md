@@ -26,7 +26,7 @@ h<sub>&theta;</sub>(x) is predicted dependent variable,
 
 The error metric considered here is Sum of Square of Error (SSE) because of which the model is also known as Ordinay Least Square (OLS). Our objective is to minimize SSE in order to reach as close to Y as possible.
 
-SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y(x))<sup>2</sup>
+SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y(x))<sup>2</sup> = &Sigma;(&epsilon;)<sup>2</sup>
 
 _Case 1:_
 
@@ -55,13 +55,13 @@ R<sup>2</sup> = SSR/SST = (SST - SSE)/SST = 1 - (SSE/SST)
 
 R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> &#8658; better the model. **(Caution! Overfitting)**
 
-Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless.
+Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless. This situation might arise in certain cases of overfitting when validating model with test data.
 
 **Overfitting**
 
 Once the model is built on the data (called as train data), we have to test it against unseen or out of sample data (called as test data) to verify that the patterns or equations discovered apply to them as well. Often, it so happens that while trying to learn the relationship, we end up learning the noise present in the data as well. This leads to really good results for the train data but when applied to test data, the result declines. 
 
-In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed, Adjusted R-Squared.
+In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed, **Adjusted R-Squared**.
 
 Adj R<sup>2</sup> = 1 - <sup>(1 - R<sup>2</sup>)*(n - 1)</sup>&frasl;<sub>(n - p - 1)</sub>, _where_, n is no. of data points and p is no. of variables.
 
@@ -99,13 +99,15 @@ Now, the above equation is a function of &beta; and our objective is to minimize
 
 &#8658; X&#884;X&beta; = X&#884;Y
 
-&#8658; (X&#884;X)<sup>-1</sup>X&#884;X&beta; = (X&#884;X)<sup>-1</sup>X&#884;Y (Pre multiply by inverse of X&#884;X)
+Now, Pre multiplying by inverse of X&#884;X
 
-&#8658; I&beta; = (X&#884;X)&#884;X&#884;Y (I is the identity matrix)
+&#8658; (X&#884;X)<sup>-1</sup>X&#884;X&beta; = (X&#884;X)<sup>-1</sup>X&#884;Y 
+
+&#8658; I&beta; = (X&#884;X)&#884;X&#884;Y ; where I is the identity matrix
 
 **&#8658; &beta; = (X&#884;X)<sup>-1</sup>X&#884;Y**
 
-If we analyze the above equation, the first term X&#884;X is the covariance matrix of independent variables while second term X&#884;Y is covariance between X and Y. This is when we consider the variables in their standardized form.
+If we analyze the above equation, the first term X&#884;X is the covariance matrix of independent variables while second term X&#884;Y is covariance between X and Y. This can be easily seen when we consider the variables in their standardized form (Standard Normal Distribution).
 
 - Gradient Descent - 
 
@@ -115,6 +117,7 @@ Gradient tells us the slope of a function at a given position. **It is a vector 
 
 The Objective function we have is SSE. Let's denote it by J(&theta;) = <sup>1</sup>&frasl;<sub>2n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}<sup>2</sup>; _where_ i = 1 to n. n is no. of observations and k is no. of variables.
 
+The function is same as the one considered before with slight additions.
 The additional term 1&frasl;2 is for mathematical convenience while n is merely to make the error metric MSE(Mean Square Error). This would not affect the output that we get.
 
 Gradient of J is defined as, <sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub> = <sup>1</sup>&frasl;<sub>n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}x<sup>(i)</sup><sub>j</sub>; _where_ j = 0 to k.
@@ -124,9 +127,9 @@ The update equation for &theta;,
 Repeat untill Convergence,
 &theta;<sub>j</sub>:= &theta;<sub>j</sub> - &alpha;<sup>&#x2202;J(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
 
-&alpha; varies between 0 and 1 and needs to be optimized. After every update we calculate J(&theta;) and observe the change. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
+&alpha; is a hyperparameter that varies between 0 and 1 and needs to be optimized. After every update we calculate J(&theta;) and observe the change. This updation of &theta; might go on forever, so, we define a stopping criteria (often called precision) for when we are very close to the global minima of the function. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
 
-**Note:** The update for the &theta;s happen simultaneously.
+**Note:** The update for all the &theta;s happen simultaneously.
 
 The process described above is called **Batch Gradient Descent**.
 
