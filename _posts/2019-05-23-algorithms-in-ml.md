@@ -16,7 +16,7 @@ Regression Models have continuous variable as outcome while classification Model
 
 ### Regression Models
 
-1. Linear Regression - It is the most prominent of the Regression models and forms the foundation of machine learning. These models 
+1. [Linear Regression](https://abhisheksanghai.com/2019/06/18/linear-regression) - It is the most prominent of the Regression models and forms the foundation of machine learning. These models 
 are in the form of a linear equation,  y = &theta;x + c, where y is the dependent variable, x is the independent variable. Once this equation is obtained by minimizing an error metric, we try and use it for prediction.
 
 2. Polynomial Regression - This is an alternate form of Linear Regression where the independent variables have degrees associated with  them. Think of it as having multiple variables such as x, x<sup>2</sup> etc.
