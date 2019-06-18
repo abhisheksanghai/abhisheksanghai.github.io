@@ -45,7 +45,7 @@ Intutively, SST is the error of Y with no independent variable (Total variance) 
 
 So, **SSR = SST - SSE**
 
-![Linear Regression](/images/Linear Regression/Linear_Regression.jpg)
+![Linear Regression](/images/Linear_Regression/Linear_Regression.jpg)
 
 Now we can define another evaluation metric for our model i.e. R-Squared = (Explained Variance)/(Total Variance)
 
@@ -111,7 +111,7 @@ If we analyze the above equation, the first term X&#884;X is the covariance matr
 
 Gradient tells us the slope of a function at a given position. **It is a vector which always points towards the maximum increase of a function**. So, the general procedure is to define the objective function, randomly initialize parameters and gradually move in the opposite direction as that of the gradient in order to minimize the function's value.
 
-![Gradient Descent](/images/Linear Regression/Gradient_Descent.jpg)
+![Gradient Descent](/images/Linear_Regression/Gradient_Descent.jpg)
 
 The Objective function we have is SSE. Let's denote it by J(&theta;) = <sup>1</sup>&frasl;<sub>2n</sub>&Sigma;{h<sub>&theta;</sub>(x<sup>(i)</sup>) - Y<sup>(i)</sup>}<sup>2</sup>; _where_ i = 1 to n. n is no. of observations and k is no. of variables.
 
