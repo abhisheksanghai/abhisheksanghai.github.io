@@ -6,7 +6,7 @@ date: 2019-05-03
 
 Linear Regression model is used to obtain relationship between a continuous outcome variable and one or more predictor variables. It is generally a good practice to understand the intution behind this approach. On the algorithm front, there are two techniques commonly used to optimize the parameters of the model, Normal Equation Method (uses Linear Algebra) and Gradient Descent (uses differential calculus, commonly used in a lot of Machine Learning Models). 
 
-**Intution**
+###Intution
 
 General equation for linear regression with n independent variables is, 
 
@@ -55,7 +55,7 @@ R<sup>2</sup> varies between 0 and 1. Higher the R<sup>2</sup> &#8658; better th
 
 Mathematically, R<sup>2</sup> may have negative values. However, when this happens, the error of the model is greater than SST, so the predicitons are worse than the average predictions with no independent variables and model is useless. This situation might arise in certain cases of overfitting when validating model with test data.
 
-**Overfitting**
+###Overfitting
 
 Once the model is built on the data (called as train data), we have to test it against unseen or out of sample data (called as test data) to verify that the patterns or equations discovered apply to them as well. Often, it so happens that while trying to learn the relationship, we end up learning the noise present in the data as well. This leads to really good results for the train data but when applied to test data, the result declines. 
 
@@ -67,7 +67,7 @@ From the equation above, as p increases &#8658; Keeping R<sup>2</sup> constant w
 Since we Know that as p increases &#8658; R<sup>2</sup> increases &#8658; and from the equation again, as R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases.
 So, it's a battle between p and R<sup>2</sup> that will decide if  Adj R<sup>2</sup> will increase or decrease. If increase in p did not increase R<sup>2</sup> to a certain limit, Adj R<sup>2</sup> decreases. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
 
-**Theory**
+###Theory
 
 - Normal Equation Method - 
 
@@ -136,3 +136,5 @@ An alternate process is **Stochastic Gradient Descent** where we update &theta;s
 **Python Code** 
 
 - [Batch Gradient Descent](https://github.com/abhisheksanghai/Machine-Learning-Codes/blob/master/codes/Batch-Gradient-Descent-Linear-Regression.md)
+
+I will write a separate post explaining the assumptions of Linear Regression and its usage on a dataset.
