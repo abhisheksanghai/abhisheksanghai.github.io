@@ -69,7 +69,7 @@ So, it's a battle between p and R<sup>2</sup> that will decide if  Adj R<sup>2</
 
 ### Theory
 
-- Normal Equation Method - 
+- **Normal Equation Method** - 
 
 This method is based on Linear Algebra. 
 
@@ -107,7 +107,7 @@ Now, Pre multiplying by inverse of X&#884;X
 
 If we analyze the above equation, the first term X&#884;X is the covariance matrix of independent variables while second term X&#884;Y is covariance between X and Y. This can be easily seen when we consider the variables in their standardized form (Standard Normal Distribution).
 
-- Gradient Descent - 
+- **Gradient Descent** - 
 
 Gradient tells us the slope of a function at a given position. **It is a vector which always points towards the maximum increase of a function**. So, the general procedure is to define the objective function, randomly initialize parameters and gradually move in the opposite direction as that of the gradient in order to minimize the function's value.
 
