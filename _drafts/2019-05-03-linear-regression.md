@@ -26,7 +26,7 @@ The error metric considered here is Sum of Square of Error (SSE) because of whic
 
 SSE = &Sigma;(h<sub>&theta;</sub>(x) - Y(x))<sup>2</sup> = &Sigma;(&epsilon;)<sup>2</sup>
 
-_Case 1:_
+**_Case 1:_**
 
 Consider the situation where we do not have any independent variables. One of the possible ways of prediction in this case would be to just take the average of Y. This can be suitably depicted using the above equations,
 
@@ -37,7 +37,7 @@ In this case, SSE is called Sum of Square Total, SST = &Sigma;(Y(x) - Y&#773;)<s
 The error SST is considered as a reference for Linear Regression Models to be evaluated as we start including independent variables.
 This is because, the error metric is supposed to decline with increase in variables (otherwise including the variable is useless).
 
-_Case 2:_
+**_Case 2:_**
 
 After inclusion of independent variables, the error metric i.e. SSE = &Sigma;(Y(x) - h<sub>&theta;</sub>(x))<sup>2</sup> = &Sigma;(Y(x) - Y&#770;(x))<sup>2</sup>
 
