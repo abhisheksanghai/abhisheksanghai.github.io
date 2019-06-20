@@ -60,13 +60,13 @@ Mathematically, R<sup>2</sup> may have negative values. However, when this happe
 
 Once the model is built on the data (called as train data), we have to test it against unseen or out of sample data (called as test data) to verify that the patterns or equations discovered apply to them as well. Often, it so happens that while trying to learn the relationship, we end up learning the noise present in the data as well. This leads to really good results for the train data but when applied to test data, the result declines. 
 
-In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (as R<sup>2</sup> will always increase as we increase no. of variables), a new metric was designed, **Adjusted R-Squared**.
+In order to prevent overfitting, instead of relying on R<sup>2</sup> alone (R<sup>2</sup> will always increase as we increase no. of variables), a new metric is designed, **Adjusted R-Squared**.
 
 Adj R<sup>2</sup> = 1 - <sup>(1 - R<sup>2</sup>)*(n - 1)</sup>&frasl;<sub>(n - p - 1)</sub>, _where_, n is no. of data points and p is no. of variables.
 
-From the equation above, as p increases &#8658; Keeping R<sup>2</sup> constant would mean Adj R<sup>2</sup> decreases, but 
-Since we Know that as p increases &#8658; R<sup>2</sup> increases &#8658; and from the equation again, as R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases.
-So, it's a battle between p and R<sup>2</sup> that will decide if  Adj R<sup>2</sup> will increase or decrease. If increase in p did not increase R<sup>2</sup> to a certain limit, Adj R<sup>2</sup> decreases. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
+From the equation above, as p increases (Keeping R<sup>2</sup> constant) &#8658; Adj R<sup>2</sup> decreases, but 
+since we know that as p increases &#8658; R<sup>2</sup> increases, and from the equation again, as R<sup>2</sup> increases &#8658; Adj R<sup>2</sup> increases.
+So, it's a battle between p and R<sup>2</sup> that will decide if  Adj R<sup>2</sup> will increase or decrease. If increase in p does not increase R<sup>2</sup> to a certain limit, Adj R<sup>2</sup> decreases. Hence, Adj R<sup>2</sup> is often used as the metric to come up with optimum list of variables in the final model.
 
 ### Theory
 
