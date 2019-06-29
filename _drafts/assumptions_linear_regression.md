@@ -15,11 +15,11 @@ Following are the assumptions that we should be checking in case of a Linear Reg
 
 1. Linearity - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be serious deflections of predictions from actual values when model is used to extrapolate beyond range of data model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
 
-![Scatter Plot Non Linear](images/Assumptions_Linear_Regression/Scatter_plot_non_linear.png)
+![Scatter Plot Non Linear](/images/Assumptions_Linear_Regression/Scatter_plot_non_linear.png)
 
 In case we find any non linear relationship appearing in the scatter plot like the one above, it should be used to apply transformations on the independent variable. Here, since the relationship appears quadratic, we will apply square root on the independent variable and check the scatter plot once again.
 
-![Scatter Plot Non Linear](images/Assumptions_Linear_Regression/Scatter_plot_linear.png)
+![Scatter Plot Non Linear](/images/Assumptions_Linear_Regression/Scatter_plot_linear.png)
 
 Since, now the relationship is linear, we are good to include the variable in the model.
 
