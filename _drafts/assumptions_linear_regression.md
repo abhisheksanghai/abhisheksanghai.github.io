@@ -13,19 +13,15 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 Following are the assumptions that we should be checking in case of a Linear Regression Model:
 
-1. Linearity - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. This assumption can be verified by simply looking at the scatter plot between the variables.
+1. Linearity - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be serious deflections of predictions from actual values when model is used to extrapolate beyond range of data model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
 
-**insert Scatter Plot for 2 linear related variables**
+![Scatter Plot Non Linear](images/Assumptions_Linear_Regression/Scatter_plot_non_linear.png)
 
-In case we find any non linear relationship appearing in the scatter plot, it should be used to apply transformations on the independent variable.
+In case we find any non linear relationship appearing in the scatter plot like the one above, it should be used to apply transformations on the independent variable. Here, since the relationship appears quadratic, we will apply square root on the independent variable and check the scatter plot once again.
 
-**insert non linear graph**
+![Scatter Plot Non Linear](images/Assumptions_Linear_Regression/Scatter_plot_linear.png)
 
-From above plot its pretty obvious that there is a non linear relationship present. Hence the transformation should be - 
-
-**insert transformed graph**
-
-Now, we are good to include the variable in the model.
+Since, now the relationship is linear, we are good to include the variable in the model.
 
 2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution by mathematical definition. This can be checked by looking at the histogram of residuals from the model. 
 
