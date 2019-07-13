@@ -23,13 +23,11 @@ In case we find any non linear relationship appearing in the scatter plot like t
 
 Since, now the relationship is linear, we are good to include the variable in the model.
 
-2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution by mathematical definition. This can be checked by looking at the histogram of residuals from the model. 
-
-Histogram, Q-Q Plot, Kolmogorov-Smirnov test
+2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution mainly becasue of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via either a Histogram of residuals, a Q-Q Plot or by running a Kolmogorov-Smirnov test (KS Test).
 
 **insert histogram of normal distribution**
 
-In case we dont get a normal distribution out of the histogram, it means the confidence intervals we get would not be much reliable but the model can still be considered for predictions.
+In case we dont get a normal distribution out of the histogram, it means the confidence intervals we get from the model would not be much reliable but the model can still be considered for predictions. So, this assumption is not very important if one is only interested in predictions.
 
 3. Constant Error Variance of Residuals (Homoscedasticity) - The Residuals are also expected to be uniformly distributed across the data. This can checked by plotting residuals against the fitted values.
 
