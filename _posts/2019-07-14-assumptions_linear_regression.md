@@ -74,5 +74,5 @@ Replacing x<sub>1</sub> in Y,
 Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>(&theta;<sub>ox<sub>1</sub></sub> + &theta;<sub>2x<sub>1</sub></sub>x<sub>2</sub> + ... + &theta;<sub>nx<sub>1</sub></sub>x<sub>n</sub> + &epsilon;<sub>x<sub>1</sub></sub>) + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> + &epsilon;
 
 Once we have VIF calculated for all the predictors, a threshold is decided beyond which we will start dropping variables from the model.
-This a recursive process where the variable with highest VIF is dropped one at a time. After dropping a variable, VIF is recalculated and the process is repeated untill all the variable are within the decided VIF threshold. General considered threshold for VIF is 4 but this can vary based on business requirements and problem statement.
+This a recursive process where the variable with highest VIF is dropped one at a time. After dropping a variable, VIF is recalculated and the process is repeated until all the variables are within the decided VIF threshold. Generally, a threshold of 4 is considered for VIF but this can vary based on business requirements and problem statement.
 
