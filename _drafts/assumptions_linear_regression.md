@@ -23,21 +23,23 @@ In case we find any non linear relationship appearing in the scatter plot like t
 
 Since, now the relationship is linear, we are good to include the variable in the model.
 
-2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution mainly becasue of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via either a Histogram of residuals, a Q-Q Plot or by running a Kolmogorov-Smirnov test (KS Test).
+2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution mainly because of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via a Histogram of residuals.
 
-**insert histogram of normal distribution**
+![Histogram of Residuals](/images/Assumptions_Linear_Regression/Histogram.png)
 
-In case we dont get a normal distribution out of the histogram, it means the confidence intervals we get from the model would not be much reliable but the model can still be considered for predictions. So, this assumption is not very important if one is only interested in predictions.
+In case we don't get a normal distribution out of the histogram, it means the confidence intervals we get from the model would not be much reliable but the model can still be considered for predictions. So, this assumption is not very important if one is only interested in predictions.
 
-3. Constant Error Variance of Residuals (Homoscedasticity) - The Residuals are also expected to be uniformly distributed across the data. This can checked by plotting residuals against the fitted values.
+3. Constant Error Variance of Residuals (Homoscedasticity) - The Residuals are also expected to be uniformly distributed across the data. This assumption I feel somehow ties back to the first assumption of linearity. If the variance in error is not constant throughout the range of data, it means we are missing a factor in our model that will help us obtain better results. This can checked by plotting residuals against the fitted values or residuals against time for a time series data.
 
-**insert graph**
+Below is the graph of a Homoscedasticity.
 
-if the variance of error is not constant, it means there is a scope of improvement in the model and we are missing out on an important factor. **improve this**
+![Homoscedasticity](/images/Assumptions_Linear_Regression/homoscedastic.png)
 
-An ideal graph would look something like this.
+Below is an example of error variance not being constant i.e. heteroscedasticity.
 
-**insert ideal graph**
+![Heteroscedasticity](/images/Assumptions_Linear_Regression/heteroscedastic.png)
+
+The variance of error not being constant means there is a scope of improvement in the model and we are missing out on an important factor.
 
 4. Independence of Residuals - The basic assumption of this model is that the observations are not correlated with each other. This means if value of a particular data point is high, value for subsequent data points will also be high or vice versa for lower values. This can be checked by evaluating autocorrelation for the dependent variable or plotting residuals of the model in the order they appear in the data.
 
