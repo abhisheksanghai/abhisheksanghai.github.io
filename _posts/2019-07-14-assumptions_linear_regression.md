@@ -23,7 +23,7 @@ In case we find any non linear relationship appearing in the scatter plot like t
 
 Since, now the relationship is linear, we are good to include the variable in the model.
 
-- **Normality of Residuals** - The residuals of a linear regression model are supposed to follow normal distribution mainly because of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via a Histogram of residuals.
+- **Normality of Residuals** - The residuals of a linear regression model are supposed to follow normal distribution mainly because of two reasons. One being mathematical convenience and other being Central Limit Theorem. This assumption can be checked via histogram of residuals.
 
 ![Histogram of Residuals](/images/Assumptions_Linear_Regression/Histogram.png)
 
