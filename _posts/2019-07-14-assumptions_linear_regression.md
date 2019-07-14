@@ -13,7 +13,7 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 Following are the assumptions that we should be checking in case of a Linear Regression Model:
 
-- **Linearity** - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be severe deflections of predictions from actual values. This happens when model is used to extrapolate for data beyond range of data, model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
+- **Linearity** - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be severe deflections of predictions from actual values. This happens when model is used to extrapolate beyond range of data on which model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
 
 ![Scatter Plot Non Linear](/images/Assumptions_Linear_Regression/Scatter_plot_non_linear.png)
 
