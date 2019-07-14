@@ -13,7 +13,7 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</s
 
 Following are the assumptions that we should be checking in case of a Linear Regression Model:
 
-1. Linearity - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be severe deflections of predictions from actual values. This happens when model is used to extrapolate for data beyond range of data model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
+1. **Linearity** - The independent variables should be having a linear relationship with the dependent variable. This is inherently because we are trying to build a linear model and any non linearity would not be taken into account by our linear equation. The implications can be severe deflections of predictions from actual values. This happens when model is used to extrapolate for data beyond range of data model was built on. This assumption can be verified by simply looking at the scatter plot between the variables.
 
 ![Scatter Plot Non Linear](/images/Assumptions_Linear_Regression/Scatter_plot_non_linear.png)
 
@@ -23,13 +23,13 @@ In case we find any non linear relationship appearing in the scatter plot like t
 
 Since, now the relationship is linear, we are good to include the variable in the model.
 
-2. Normality of Residuals - The residuals of a linear regression model are supposed to follow normal distribution mainly because of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via a Histogram of residuals.
+2. **Normality of Residuals** - The residuals of a linear regression model are supposed to follow normal distribution mainly because of two reasons. One being mathematical convenience and other being central limit theorem. This assumption can be checked via a Histogram of residuals.
 
 ![Histogram of Residuals](/images/Assumptions_Linear_Regression/Histogram.png)
 
 In case we don't get a normal distribution out of the histogram, it means the confidence intervals we get from the model would not be much reliable but the model can still be considered for predictions. So, this assumption is not very important if one is only interested in predictions.
 
-3. Constant Error Variance of Residuals (Homoscedasticity) - The Residuals are also expected to be uniformly distributed across the data. This assumption I feel somehow ties back to the first assumption of linearity. If the variance in error is not constant throughout the range of data, it means we are missing a factor in our model that will help us obtain better results. This can checked by plotting residuals against the fitted values or residuals against time for a time series data.
+3. **Constant Error Variance of Residuals (Homoscedasticity)** - The Residuals are also expected to be uniformly distributed across the data. This assumption I feel somehow ties back to the first assumption of linearity. If the variance in error is not constant throughout the range of data, it means we are missing a factor in our model that will help us obtain better results. This can checked by plotting residuals against the fitted values or residuals against time for a time series data.
 
 Below is the graph of a Homoscedasticity.
 
@@ -41,13 +41,13 @@ Below is an example of error variance not being constant i.e. heteroscedasticity
 
 The variance of error not being constant means there is a scope of improvement in the model and we are missing out on an important factor.
 
-4. Independence of Residuals - The basic assumption of this model is that the observations are not correlated with each other. This means if value of a particular data point is high, value for subsequent data points will also be high or vice versa for lower values. This can be checked by evaluating autocorrelation for the dependent variable or plotting residuals of the model in the order they appear in the data.
+4. **Independence of Residuals** - One of the basic assumption of any linear model is that the observations are not correlated with each other. This means that presence of high value in the data should not mean the subsequent value is also going to be high or vice versa. If this happens, then we are most probably dealing with time series data and there are other models that we should be using instead.
 
-Durbin Watson Test
+This can be checked by evaluating autocorrelation for the dependent variable or plotting residuals of the model in the order they appear in the data. For the assumption to be verified, the plot should be random and no pattern should be visible.
 
-**insert graph**
+There is a clear pattern emerging from the following plot of residuals which means there the errors are not independent of each other and the occurence of a data point is affected by the subsequent ones. In this case, we should use a time series model instead.
 
-In case we find a pattern appearing in this graph, that means there is a correlation present in the data and we should be using time series models instead.
+![Independence of Errors](/images/Assumptions_Linear_Regression/Independence_errors.png)
 
 Apart from these assumptions we should also check for presence of multicollinearity in the data.
 
