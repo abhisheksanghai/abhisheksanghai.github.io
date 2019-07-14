@@ -29,7 +29,7 @@ Since, now the relationship is linear, we are good to include the variable in th
 
 In case we don't get a normal distribution out of the histogram, it means the confidence intervals we get from the model would not be much reliable but the model can still be considered for predictions. So, this assumption is not very important if one is only interested in predictions.
 
-3. **Constant Error Variance of Residuals (Homoscedasticity)** - The Residuals are also expected to be uniformly distributed across the data. This assumption I feel somehow ties back to the first assumption of linearity. If the variance in error is not constant throughout the range of data, it means we are missing a factor in our model that will help us obtain better results. This can checked by plotting residuals against the fitted values or residuals against time for a time series data.
+3. **Constant Error Variance of Residuals (Homoscedasticity)** - The Residuals are also expected to be uniformly distributed across the data. This assumption I feel somehow ties back to the first assumption of linearity. If the variance in error is not constant throughout the range of data, it means we are missing a factor in our model that will help us obtain better results. This can be checked by plotting residuals against the fitted values or residuals against time for a time series data.
 
 Below is the graph of a Homoscedasticity.
 
@@ -45,9 +45,9 @@ The variance of error not being constant means there is a scope of improvement i
 
 This can be checked by evaluating autocorrelation for the dependent variable or plotting residuals of the model in the order they appear in the data. For the assumption to be verified, the plot should be random and no pattern should be visible.
 
-There is a clear pattern emerging from the following plot of residuals which means there the errors are not independent of each other and the occurence of a data point is affected by the subsequent ones. In this case, we should use a time series model instead.
-
 ![Independence of Errors](/images/Assumptions_Linear_Regression/Independence_errors.png)
+
+In the plot above, there is a clear pattern emerging from the plot of residuals which means that the errors are not independent of each other and the occurence of a data point is affected by the subsequent ones. In this case, we should use a time series model instead.
 
 Apart from these assumptions we should also check for presence of multicollinearity in the data.
 
