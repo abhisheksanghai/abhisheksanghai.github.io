@@ -53,7 +53,7 @@ Apart from these assumptions we should also check for presence of multicollinear
 
 **Multicollinearity**
 
-This refers to the situation where the independent variables(predictors) are highly correlated among each other. The problem with this is, if we look at the equation of linear regression, we say a unit change in x<sub>1</sub> results in &theta;<sub>1</sub> amount of change in Y, _given_ other predictor variables are constant but, in presence of high correlation, there's a good chance (**correlation vs causation**) other variables won't remain constant. 
+This refers to the situation where the independent variables (predictors) are highly correlated among each other. The problem with this is, if we look at the equation of linear regression, we say a unit change in x<sub>1</sub> results in &theta;<sub>1</sub> amount of change in Y, _given_ other predictor variables are constant but, in presence of high correlation, there's a good chance (**correlation vs causation**) other variables won't remain constant. 
 
 This can be checked by looking at the correlation matrix for the predictors. Another way of determining this would be to consider Variance Inflation Factor(VIF). VIF is calculated for each and every predictor without taking the outcome variable into consideration.
 
@@ -73,6 +73,6 @@ x<sub>1</sub> = &theta;<sub>ox<sub>1</sub></sub> + &theta;<sub>2x<sub>1</sub></s
 Replacing x<sub>1</sub> in Y,
 Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>(&theta;<sub>ox<sub>1</sub></sub> + &theta;<sub>2x<sub>1</sub></sub>x<sub>2</sub> + ... + &theta;<sub>nx<sub>1</sub></sub>x<sub>n</sub> + &epsilon;<sub>x<sub>1</sub></sub>) + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub> + &epsilon;
 
-Once we have VIF calculated for all the predcitors, a threshold is decided beyond which we will start dropping variables from the model.
+Once we have VIF calculated for all the predictors, a threshold is decided beyond which we will start dropping variables from the model.
 This a recursive process where the variable with highest VIF is dropped one at a time. After dropping a variable, VIF is recalculated and the process is repeated untill all the variable are within the decided VIF threshold. General considered threshold for VIF is 4 but this can vary based on business requirements and problem statement.
 
