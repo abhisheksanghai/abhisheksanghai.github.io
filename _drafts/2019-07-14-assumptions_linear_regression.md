@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Assumptions of Linear Regression"
-date: 2019-06-29
+date: 2019-07-14
 ---
 
 In the last post, I described the workings of a Linear Regression Model. Now, with any model there is a randomness (error or residual) associated which we call the noise in the data. Usually, we can represent it as **Data = Formula + Noise**. For us to understand how good our model is, we should explore this randomness for any improvements possible.
