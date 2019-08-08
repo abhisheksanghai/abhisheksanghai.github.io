@@ -76,3 +76,5 @@ Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>(&theta;<sub>ox<sub>1</sub></sub
 Once we have VIF calculated for all the predictors, a threshold is decided beyond which we will start dropping variables from the model.
 This a recursive process where the variable with highest VIF is dropped one at a time. After dropping a variable, VIF is recalculated and the process is repeated until all the variables are within the decided VIF threshold. Generally, a threshold of 4 is considered for VIF but this can vary based on business requirements and problem statement.
 
+Link to usage of Linear regression on a dataset - [Here](/Algorithms_in_Action/Linear_regression.ipynb)
+
