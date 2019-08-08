@@ -138,4 +138,5 @@ An alternate process is **Stochastic Gradient Descent** where we update &theta;s
 
 - [Batch Gradient Descent](https://github.com/abhisheksanghai/Machine-Learning-Codes/blob/master/codes/Batch-Gradient-Descent-Linear-Regression.md)
 
-I will write a separate post explaining the [Assumptions of Linear Regression](https://abhisheksanghai.com/2019/07/14/assumptions_linear_regression) and its usage on a dataset.
+I will write a separate post explaining the [Assumptions of Linear Regression](https://abhisheksanghai.com/2019/07/14/assumptions_linear_regression) and its [usage on a dataset]
+(Algorithms_in_Action/Linear_regression.ipynb).
