@@ -17,6 +17,12 @@ date: 2019-05-03
 * usage
 
 - look at scatter plots (looks wierd) (exlpains a reason for why not linear)
+- probability review
+- odds = P(occuring)/P(not occuring)  =p/(1-p), if 1:1 => odds are even
+- odds ratio - ratio of odds = odds1/odds0 = 2.33:1/1:1 => odds of getting head on loaded coin 2.33 times higher than odds in fair coin
+  odds ratio for a variable represent how the odds change with unit change in variable keeping others constant.
+  unit increase in weight increases odds of sleep apnea by 1.07 times which is 7%. Holds true at any given point of weight.
+  probability and odds different
 
 
 
