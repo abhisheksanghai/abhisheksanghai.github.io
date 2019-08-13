@@ -23,6 +23,11 @@ date: 2019-05-03
   odds ratio for a variable represent how the odds change with unit change in variable keeping others constant.
   unit increase in weight increases odds of sleep apnea by 1.07 times which is 7%. Holds true at any given point of weight.
   probability and odds different
+- dependent variable is as bernoulli trial, P(S) = pand P(F) = 1-p
+- In logistic Regression, we are estimating unknown p for any given linear combination of independent variables
+- link to bernoulli to independent variables is called logit (natural log of odds ratio) = ln(p/(1-p))
+- Inverse logit - 1/1+e^-alpha => Sigmoid Curve (S curve)
+- Odds Ratio from Model (check this) Brandon Foltz video 4
 
 
 
