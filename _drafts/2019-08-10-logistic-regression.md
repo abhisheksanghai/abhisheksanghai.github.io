@@ -5,9 +5,7 @@ title: "Logistic Regression"
 date: 2019-05-03
 ---
 
-Logistic Regression Model is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine, if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. 
-
-Since, it is a classification technique, it is used for categorical target variables. 
+Logistic Regression Model is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. Since, it is a classification technique, it is used for categorical target variables. 
 
 ### Theory
 
@@ -46,10 +44,13 @@ There are some terms that one should be aware of when discussing probability.
 
 Sum of probabilites of events that are mutually exclusive and exhaustive is 1 
 
+**insert venn diagram**
+
 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
 3. Independent Events - If occurence of non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
 
+In order to understand this better, we have to understand conditional probabillity.
 
 
 
