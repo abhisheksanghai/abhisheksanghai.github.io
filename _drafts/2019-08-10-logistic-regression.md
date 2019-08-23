@@ -64,7 +64,9 @@ Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(
 
 Intuitively, it means occurence of B did not affect A i.e. B has no effect on A => A and B are independent events.
 
-Also, P(A&cap;B) = P(A/B)*P(B) => P(A&cap;B) = P(A)*P(B) => Condition of Independence.
+Also, P(A&cap;B) = P(A/B)*P(B) 
+
+&#8658; P(A&cap;B) = P(A)*P(B) &#8658; **Condition of Independence**.
 
 
 
