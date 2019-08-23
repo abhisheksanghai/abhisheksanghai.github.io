@@ -44,13 +44,27 @@ There are some terms that one should be aware of when discussing probability.
 
 Sum of probabilites of events that are mutually exclusive and exhaustive is 1 
 
-**insert venn diagram**
-
 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
-3. Independent Events - If occurence of non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
+**insert venn diagram**
 
-In order to understand this better, we have to understand conditional probabillity.
+3. Independent Events - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
+
+In order to understand this better, we have to look for conditional probabillity.
+
+P(A/B) => read as Probability of occurence of event A when it is known that Event B has already occured. (Probability of A given B)
+
+**insert venn diagram**
+
+Since, Event B already occured, the set of possible outcomes now reduced to n(B) and favourable outcomes from these are the ones where A and B occurs simultaneously
+
+So, P(A/B) = P(A&cap;B)/P(B)
+
+Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(A/B) = P(A)?
+
+Intuitively, it means occurence of B did not affect A i.e. B has no effect on A => A and B are independent events.
+
+Also, P(A&cap;B) = P(A/B)*P(B) => P(A&cap;B) = P(A)*P(B) => Condition of Independence.
 
 
 
