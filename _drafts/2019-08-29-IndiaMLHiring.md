@@ -26,7 +26,7 @@ the delinquency status of loans for the next month given the delinquency status 
 
 Submissions are evaluated on F1-Score between the predicted class and observed.
 
-The datasets can be found here. **insert github link**
+The datasets and the submission code can be found [here](https://github.com/abhisheksanghai/IndiaMLHiring]). I used R programming for this hackathon.
 
 ### Data Dictionary
 
