@@ -5,7 +5,7 @@ title: "India ML Hiring"
 date: 2019-08-29
 ---
 
-Recently I partitipated in one of the hackathons organized by Analytics Vidhya "IndiaMLHiring". The way it works is we get a 
+Recently I participated in one of the hackathons organized by Analytics Vidhya "IndiaMLHiring". The way it works is we get a 
 training data with target variables and a test data without target variable. The test data received is 40% of the entire test data 
 and rest 60% is kept hidden. We are allowed to make submissions and test our model as per accuracy provided by the system. 
 These gives us a rank on Public Leaderboard. Once the contest is over, our final marked submission is tested against the remaining 
@@ -53,8 +53,9 @@ The datasets and the submission code can be found [here](https://github.com/abhi
 
 The code used for this entire process is present [here](https://github.com/abhisheksanghai/IndiaMLHiring-2019/blob/master/Code.R).
 
-1.	Initially, basic exploration of dataset was done which involves looking at the imbalance in the data, univariate analysis, cross tabulation for categorical variables with m13 and distribution of continuous variables for m13.
-2.	Variable Exploration and Feature Engineering - 
+Basic exploration of dataset was done which involves looking at the imbalance in the data (this one is highly imbalanced data, ratio of 0:1 being 99.45:0.55), univariate analysis, cross tabulation for categorical variables with m13 (target) and distribution of continuous variables for m13.
+
+As part of Feature Engineering, following steps were taken - 
   * Source – Use as binary dummy variables.
   * Financial Institution – Clubbed from 19 values to 6 values using response rate and frequency of categories. Post this, binary dummy variables were created for this.
   * Interest Rate – Used as it is.
@@ -89,9 +90,17 @@ The code used for this entire process is present [here](https://github.com/abhis
     * All m1 to m12 were converted to binary variables with exception of m12 as it seemed important in exploratory analysis. New variable for m12 was also created.
 
 ### Model Building and Selection - 
-  * Initially, logistic regression was used with 5 fold Cross Validation with train cv F1 Score being 0.53, but the leader board score very low (0.29) – Private Leader board Score is 0.60
-  * After this, I tried xgboost model with lots of different iterations which did give some improvements train cv score 0.57 to 0.60 for different iterations. Since the train and test data had different cut-offs i.e. 0.33 for train and 0.23 for test giving best F1 Scores, I tired with different cut-offs and settled with cut-off 0.3. Public Scoreboard improved to 0.345
-  * SMOTE was used for balancing the dataset with train cv improving significantly to 0.9 but leader board score did not improve beyond 0.34
-  * Lot of ensembles were tried with different submissions
-  * Final Submission was marked as xgboost with cut-off as 0.3 for delinquency. The model for 5 fold Cross validation with predictions being even if 1 model predicted TRUE instead of majority.
-  * Final Parameters - booster="gbtree", eta=0.001, max_depth=5, gamma=3, subsample=0.75, colsample_bytree=1, objective="multi:softprob", eval_metric="mlogloss", num_class=num_class
+
+* 5 fold Cross Validation was used for model selection across different algorithms.
+* The F1 scores obtained for train data and submitted scores varied a lot with training scores around 0.52 to 0.57 and test scores around 0.28 to 0.34.
+* Initially, logistic regression was used with 5 fold Cross Validation - Train cv F1 Score obtained was 0.53, but the public leader board score was low (0.29). Surprisingly, Private Leader board Score for this turned out to be 0.60 which is my personal best on this dataset.
+* After this, I tried xgboost model with lots of different iterations which did give some improvements - Train cv F1 score obtained varied from 0.57 to 0.60 for different iterations. Since the train and test data had different cut-offs giving best F1 Score i.e. 0.33 for train and 0.23 for test, I tired with different cut-offs and settled with cut-off 0.3 as it gave me personal highest Public Leaderboard score of 0.345. Private LeaderBoard Score for this is 0.5741.
+* I also tried using SMOTE as the dataset was hugely imbalanced. This resulted in train cv improving significantly to 0.9 but Public leaderboard score did not improve beyond 0.34.
+* I also tried lots of ensembles with different submissions giving better results but none improved beyond 0.345.
+* Final Submission was marked as xgboost with cut-off as 0.3 for delinquency. The model for 5 fold Cross validation with predictions being even if 1 model predicted TRUE instead of majority.
+* The reason I chose final predictions to be 1 even if one of the 5 folds preicted TRUE is because I observed a trend where I was having
+better scores with ~ 150 positive predictions.
+
+Final Public LeaderBoard Rank achieved was 20. Private LeaderBoard ranks are yet to be published.
+
+
