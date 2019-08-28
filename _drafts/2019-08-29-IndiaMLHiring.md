@@ -98,7 +98,7 @@ As part of Feature Engineering, following steps were taken -
 * I also tried using SMOTE as the dataset was hugely imbalanced. This resulted in train cv improving significantly to 0.9 but Public leaderboard score did not improve beyond 0.34.
 * I also tried lots of ensembles with different submissions giving better results but none improved beyond 0.345.
 * Final Submission was marked as xgboost with cut-off as 0.3 for delinquency. The model for 5 fold Cross validation with predictions being even if 1 model predicted TRUE instead of majority.
-* The reason I chose final predictions to be 1 even if one of the 5 folds preicted TRUE is because I observed a trend where I was having
+* The reason I chose final predictions to be 1 even if one of the 5 folds predicted TRUE is because I observed a trend where I was having
 better scores with ~ 150 positive predictions.
 
 Final Public LeaderBoard Rank achieved was 20. Private LeaderBoard ranks are yet to be published.
