@@ -26,7 +26,7 @@ the delinquency status of loans for the next month given the delinquency status 
 
 Submissions are evaluated on F1-Score between the predicted class and observed.
 
-The datasets and the submission code can be found [here](https://github.com/abhisheksanghai/IndiaMLHiring]). I used R programming for this hackathon.
+The datasets and the submission code can be found [here](https://github.com/abhisheksanghai/IndiaMLHiring-2019). I used R programming for this hackathon.
 
 ### Data Dictionary
 
@@ -50,6 +50,8 @@ The datasets and the submission code can be found [here](https://github.com/abhi
 - m13	(target) - loan deliquency status (0 = non deliquent, 1 = deliquent)
 
 ### Data Exploration
+
+The code used for this entire process is present [here](https://github.com/abhisheksanghai/IndiaMLHiring-2019/blob/master/Code.R).
 
 1.	Initially, basic exploration of dataset was done which involves looking at the imbalance in the data, univariate analysis, cross tabulation for categorical variables with m13 and distribution of continuous variables for m13.
 2.	Variable Exploration and Feature Engineering - 
