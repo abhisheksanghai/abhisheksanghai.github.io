@@ -101,6 +101,6 @@ As part of Feature Engineering, following steps were taken -
 * The reason I chose final predictions to be 1 even if one of the 5 folds predicted TRUE is because I observed a trend where I was having
 better scores with ~ 150 positive predictions.
 
-Final Public LeaderBoard Rank achieved was 20. Private LeaderBoard ranks are yet to be published.
+Final Public LeaderBoard Rank achieved was 20 out of 1200+ participants. Private LeaderBoard ranks are yet to be published.
 
 
