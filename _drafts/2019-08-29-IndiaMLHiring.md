@@ -7,7 +7,7 @@ date: 2019-08-29
 
 Recently I participated in one of the hackathons organized by Analytics Vidhya "IndiaMLHiring". The way it works is we get a 
 training data with target variables and a test data without target variable. The test data received is 40% of the entire test data 
-and rest 60% is kept hidden. We are allowed to make submissions and test our model as per accuracy provided by the system. 
+and rest 60% is kept hidden. We are allowed to make submissions and test our model's accuracy against the 40% test data. 
 These gives us a rank on Public Leaderboard. Once the contest is over, our final marked submission is tested against the remaining 
 60% of the test data which is unseen to the model. The results from this gives us a new rank which constitutes Private Leaderboard 
 and is the final rank. 
