@@ -97,7 +97,7 @@ As part of Feature Engineering, following steps were taken -
 * After this, I tried xgboost model with lots of different iterations which did give some improvements - Train cv F1 score obtained varied from 0.57 to 0.60 for different iterations. Since the train and test data had different cut-offs giving best F1 Score i.e. 0.33 for train and 0.23 for test, I tired with different cut-offs and settled with cut-off 0.3 as it gave me personal highest Public Leaderboard score of 0.345. Private LeaderBoard Score for this is 0.5741.
 * I also tried using SMOTE as the dataset was hugely imbalanced. This resulted in train cv improving significantly to 0.9 but Public leaderboard score did not improve beyond 0.34.
 * I also tried lots of ensembles with different submissions giving better results but none improved beyond 0.345.
-* Final Submission was marked as xgboost with cut-off as 0.3 for delinquency. The model for 5 fold Cross validation with predictions being positive even if 1 model predicted TRUE instead of majority.
+* Final Submission was marked as xgboost with cut-off as 0.3 for delinquency. The model was 5 fold Cross validation with predictions being positive even if 1 fold model predicted TRUE instead of majority.
 * The reason I chose final predictions to be 1 even if one of the 5 folds predicted TRUE is because I observed a trend where I was having
 better scores with ~ 150 positive predictions.
 
