@@ -15,15 +15,16 @@ Below is a scatter plot for a continuous predictor and a categorical target vari
 
 From the plot it is very obvious that a linear equation like model (linear regression) would not work in it's raw form as the output of linear regression would be unbounded and we would need some sort of transformation to bring the output in the permissible range of probability i.e. (0,1). In case of logistic regression, we use logit transformation for this purpose.
 
-General Equation of a logistic regression with n independent variables - 
+Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;
 
-P(x) = 1/(1+e<sup>-Y(x)</sup>); 
-_where_
-Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub>, 
+Logit Transformation, Y(x) = ln(P(x)/(1-P(x))); _where_ ln is natural log.
 
-x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
+&#8658; **P(x) = 1/(1+e<sup>-Y(x)</sup>)**; 
+_where_ x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 P(x) is the probability of occurence of event.
+
+which is also General Equation of a logistic regression with n independent variables. 
 
 ### Probability (Revision)
 
@@ -36,7 +37,7 @@ So, P(E) = n(E)/n(S)
 Eg - Event is Rolling a dice and getting a 4. There is total 6 faces on the dice with numbers 1 to 6 on it.
 So, favourable outcome is when we get 4 i.e. 1 case and total possible outcomes is 6. This means, P(4 on dice) = 1/6.
 
-There are some terms that one should be aware of when discussing probability.
+Now, there are some terms that one should be aware of when discussing probability.
 
 1. Exhaustive Events - The set of events that forms the sample space i.e. no event can take place outside this set.
 
@@ -62,11 +63,15 @@ So, P(A/B) = P(A&cap;B)/P(B)
 
 Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(A/B) = P(A)?
 
-Intuitively, it means occurence of B did not affect A i.e. B has no effect on A => A and B are independent events.
+Intuitively, it means occurence of B did not affect A i.e. B has no effect on A &#8658; A and B are independent events.
 
 Also, P(A&cap;B) = P(A/B)*P(B) 
 
 &#8658; P(A&cap;B) = P(A)*P(B) &#8658; **Condition of Independence**.
+
+This condition of independence can be extended to n no. ofevents being independent of each other i.e.
+
+&#8658; P(A&cap;B&cap;C) = P(A)*P(B)*P(C) and so on.
 
 
 
