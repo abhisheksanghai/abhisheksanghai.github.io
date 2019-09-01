@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Logistic Regression"
-date: 2019-05-03
+date: 2019-09-01
 ---
 
 Logistic Regression Model is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. Since, it is a classification technique, it is used for categorical target variables. 
@@ -69,12 +69,29 @@ Also, P(A&cap;B) = P(A/B)*P(B)
 
 &#8658; P(A&cap;B) = P(A)*P(B) &#8658; **Condition of Independence**.
 
-This condition of independence can be extended to n no. ofevents being independent of each other i.e.
+This condition of independence can be extended to n no. of events being independent of each other i.e.
 
 &#8658; P(A&cap;B&cap;C) = P(A)*P(B)*P(C) and so on.
 
+Next, Let's talk about Odds and Odds Ratio.
 
+Odds = P(occurence)/P(non occurence)  =p/(1-p)
 
+Eg - For a coint toss, odds of getting a head = P(Head)/P(Not Head) = P(Head)/P(Tail) = 0.5/0.5 = 1:1
+
+Odds Ratio = Ratio of two odds = Odds1/Odds0
+
+Eg - For a fair coin toss, P(Head) = 0.5 &#8658; Odds(Head) = Odds0 = 1:1
+
+For a loaded unfair Coin, let's say, P(Head) = 0.6 &#8658; Odds(Head) = Odds1 = 0.6:0.4 = 3:2
+
+Therefore, Odds Ratio = Odds1/Odds0 = 1.5
+
+This means Odds of getting a head on the unfair coin is 1.5 times higher than the fair coin.
+
+**But, Why are we talking about Odds and Odds Ratio all of a sudden?**
+
+That's because in the output of logistic regression, Odds Ratio of a variable represents the increase in odds of Event happening with unit increase in corresponding variable and it remains constant. **Note:** Probability might still be less with higher value for Odds Ratio.
 
 
 
