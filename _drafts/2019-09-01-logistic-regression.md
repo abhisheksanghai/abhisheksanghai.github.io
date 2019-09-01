@@ -131,4 +131,12 @@ The update equation for &theta;,
 Repeat untill Convergence,
 &theta;<sub>j</sub>:= &theta;<sub>j</sub> + &alpha;<sup>&#x2202;l(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
 
+### Output
+
+*probabilities
+*Confusion Matrix
+*Error Metrics - Misclassification Error, Precision, Recall, F1 Score
+*AUC
+*Lift and Gain Charts
+
 
