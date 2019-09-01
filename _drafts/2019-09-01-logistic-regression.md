@@ -54,6 +54,7 @@ P(A/B) => read as Probability of occurence of event A when it is known that Even
 **insert venn diagram**
 
 Since, Event B has already occured, the set of possible outcomes has now reduced to n(B), So favourable outcomes for A are only going to be from the set n(B) &#8658; We have to look for the ones where A and B occurs simultaneously.
+
 &#8658; P(A/B) = P(A&cap;B)/P(B) &#8658; P(A&cap;B) = P(A/B)*P(B)
 
 Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(A/B) = P(A)?
@@ -65,8 +66,6 @@ Intuitively, it means occurence of B did not affect A i.e. B has no effect on A 
 This condition of independence can be extended to n no. of events being independent of each other i.e.
 
 &#8658; P(A&cap;B&cap;C) = P(A)*P(B)*P(C) and so on.
-
-Next, Let's talk about **Odds and Odds Ratio**.
 
 - Odds = P(occurence)/P(non occurence)  =p/(1-p)
 
