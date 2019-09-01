@@ -108,7 +108,7 @@ Now, P(Y=1/x<sup>(i)</sup>;&theta;) = P(x)<sup>(i)</sup> = h<sub>&theta;</sub>(x
 
 P(Y=0/x<sup>(i)</sup>;&theta;) = 1 - P(x<sup>(i)</sup>) = 1 - h<sub>&theta;</sub>(x<sup>(i)</sup>)
 
-So, together, it can be represented as, P(Y/x<sup>(i)</sup>;&theta;) = h<sub>&theta;</sub>(x<sup>(i)</sup>)<sup>Y</sup> (1 - h<sub>&theta;</sub>(x<sup>(i)</sup>))<sup>(1-Y)</sup>
+So, together, it can be represented as, P(Y<sup>(i)</sup>/x<sup>(i)</sup>;&theta;) = h<sub>&theta;</sub>(x<sup>(i)</sup>)<sup>Y<sup>(i)</sup></sup> (1 - h<sub>&theta;</sub>(x<sup>(i)</sup>))<sup>(1-Y<sup>(i)</sup>)</sup>
 
 This equation is for a single data point. Now, in any linear model, it is one of the key assumption that the observations will be independent of each other i.e. occurence of event for one data point will not affect the occurence of event for another. Using this assumption, we can apply condition of independence here,
 
