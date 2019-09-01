@@ -15,9 +15,9 @@ Below is a scatter plot for a continuous predictor and a categorical target vari
 
 From the plot it is very obvious that a linear equation like model (linear regression) would not work in it's raw form as the output of linear regression would be unbounded and we would need some sort of transformation to bring the output in the permissible range of probability i.e. (0,1). In case of logistic regression, we use logit transformation for this purpose.
 
-Z(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;
+Z(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub>
 
-**Logit Transformation** (also defined as log(odds)), Z(x) = ln(P(x)/(1-P(x))); _where_ ln is natural log.
+Logit Transformation (also defined as log(odds)), Z(x) = ln(<sup>P(x)</sup>&frasl;<sub>1-P(x)</sub>); _where_ ln is natural log.
 
 &#8658; P(x) = 1/(1+e<sup>-Z(x)</sup>); 
 
@@ -25,50 +25,40 @@ _where_ x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent varia
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 P(x) is the probability of occurence of event.
 
-which is also **General Equation of a logistic regression with n independent variables**. 
+which is also General Equation of a logistic regression with n independent variables. 
 
 **insert output graph for logistic (Sigmoid Curve)**
 
 ### Probability (Revision)
 
-The probability of occurence of an event E, is defined as, P(E) =  Favourable Outcomes/ Total Possible Outcomes.
-
-In probability, it's very important to define the sample space (Total possible outcomes). It is represented as S.
-
+In probability, it's very important to define the sample space (Total possible outcomes, represented as S). The probability of occurence of an event E, is defined as, P(E) =  Favourable Outcomes/ Total Possible Outcomes.
 So, P(E) = n(E)/n(S)
 
 Eg - Event is Rolling a dice and getting a 4. There is total 6 faces on the dice with numbers 1 to 6 on it.
-So, favourable outcome is when we get 4 i.e. 1 case and total possible outcomes is 6. This means, P(4 on dice) = 1/6.
+So, favourable outcome is when we get 4 i.e. one case and total possible outcomes is six. &#8658; P(4 on dice) = 1/6.
 
 Now, there are some terms that one should be aware of when discussing probability.
 
-1. **Exhaustive Events** - The set of events that forms the sample space i.e. no event can take place outside this set.
+- Exhaustive Events - The set of events that forms the sample space i.e. no event can take place outside this set.
 
-2. **Mutually Exclusive Events** - Events that can not take place together.
+- Mutually Exclusive Events - Events that can not take place together. They are also called disjoint events.
 
-Sum of probabilites of events that are mutually exclusive and exhaustive is 1 
-
-i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
+    Sum of probabilites of events that are mutually exclusive and exhaustive is 1 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
 **insert venn diagram**
 
-3. **Independent Events** - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
-
-In order to understand this better, we have to look for conditional probabillity.
+- Independent Events - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events. In order to understand this better, we have to look for conditional probabillity.
 
 P(A/B) => read as Probability of occurence of event A when it is known that Event B has already occured. (Probability of A given B)
 
 **insert venn diagram**
 
-Since, Event B already occured, the set of possible outcomes now reduced to n(B) and favourable outcomes from these are the ones where A and B occurs simultaneously
-
-So, P(A/B) = P(A&cap;B)/P(B)
+Since, Event B has already occured, the set of possible outcomes has now reduced to n(B), So favourable outcomes for A are only going to be from the set n(B) &#8658; We have to look for the ones where A and B occurs simultaneously.
+&#8658; P(A/B) = P(A&cap;B)/P(B) &#8658; P(A&cap;B) = P(A/B)*P(B)
 
 Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(A/B) = P(A)?
 
 Intuitively, it means occurence of B did not affect A i.e. B has no effect on A &#8658; A and B are independent events.
-
-Also, P(A&cap;B) = P(A/B)*P(B) 
 
 &#8658; P(A&cap;B) = P(A)*P(B) &#8658; **Condition of Independence**.
 
@@ -80,13 +70,13 @@ Next, Let's talk about **Odds and Odds Ratio**.
 
 - Odds = P(occurence)/P(non occurence)  =p/(1-p)
 
-Eg - For a coint toss, odds of getting a head = P(Head)/P(Not Head) = P(Head)/P(Tail) = 0.5/0.5 = 1:1
+Eg - For a fair coin toss, odds of getting a head = P(Head)/P(Not Head) = P(Head)/P(Tail) = 0.5/0.5 = 1:1
 
 - Odds Ratio = Ratio of two odds = Odds1/Odds0
 
 Eg - For a fair coin toss, P(Head) = 0.5 &#8658; Odds(Head) = Odds0 = 1:1
 
-For a loaded unfair Coin, let's say, P(Head) = 0.6 &#8658; Odds(Head) = Odds1 = 0.6:0.4 = 3:2
+For an unfair coin, let's say, P(Head) = 0.6 &#8658; Odds(Head) = Odds1 = 0.6:0.4 = 3:2
 
 Therefore, Odds Ratio = Odds1/Odds0 = 1.5
 
