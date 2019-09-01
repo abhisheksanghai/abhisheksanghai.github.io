@@ -95,7 +95,7 @@ The equation we have at hand is, P(x<sup>(i)</sup>) = h<sub>&theta;</sub>(x<sup>
 
 Now, P(Y=1/x<sup>(i)</sup>;&theta;) = P(x)<sup>(i)</sup> = h<sub>&theta;</sub>(x<sup>(i)</sup>) (This means Y=1, x is known and &theta; is the unkown on which probability depends)
 
-P(Y=0/x<sup>(i)</sup>;&theta;) = 1 - P(x<sup>(i)</sup>) = 1 - h<sub>&theta;</sub>(x<sup>(i)</sup>)
+Also, P(Y=0/x<sup>(i)</sup>;&theta;) = 1 - P(x<sup>(i)</sup>) = 1 - h<sub>&theta;</sub>(x<sup>(i)</sup>)
 
 So, together, it can be represented as, P(Y<sup>(i)</sup>/x<sup>(i)</sup>;&theta;) = h<sub>&theta;</sub>(x<sup>(i)</sup>)<sup>Y<sup>(i)</sup></sup> (1 - h<sub>&theta;</sub>(x<sup>(i)</sup>))<sup>(1-Y<sup>(i)</sup>)</sup>
 
@@ -103,13 +103,13 @@ This equation is for a single data point. Now, in any linear model, it is one of
 
 P(Y/x;&theta;) = P(Y<sup>(1)</sup>/x<sup>(1)</sup>;&theta;) * P(Y<sup>(2)</sup>/x<sup>(2)</sup>;&theta;) * P(Y<sup>(3)</sup>/x<sup>(3)</sup>;&theta;) * .... * P(Y<sup>(m)</sup>/x<sup>(m)</sup>;&theta;) ; _where_ m is no. of data points.
 
-P(Y/x;&theta;) = 	&Pi; P(Y<sup>(i)</sup>/x<sup>(i)</sup>;&theta;) _where_ i = 1,2,3,...,m
+&#8658; P(Y/x;&theta;) = 	&Pi; P(Y<sup>(i)</sup>/x<sup>(i)</sup>;&theta;) _where_ i = 1,2,3,...,m
 
 &#8658; L(&theta;) = &Pi; h<sub>&theta;</sub>(x<sup>(i)</sup>)<sup>Y<sup>(i)</sup></sup> (1 - h<sub>&theta;</sub>(x<sup>(i)</sup>))<sup>(1-Y<sup>(i)</sup>)</sup> _where_ i = 1,2,3,...,m and L(&theta;) is called Likelihood function.
 
-This is our objective function and we are going to try and maximize it and for this we will be using Gradient Ascent(opposite of Gradient Descent) but first we need it in correct form.
+This is our objective function and we are going to try and maximize it. For this we will be using Gradient Ascent(opposite of Gradient Descent) but first we need it in correct form to make calculations easy.
 
-So, taking Log on both sides, we get log likelihood which is what we will be maximizing
+So, taking Log on both sides, we get log likelihood which is what we will be maximizing.
 
 l(&theta;) = log(L(&theta;)) = &Sigma; Y<sup>(i)</sup> * log(h<sub>&theta;</sub>(x<sup>(i)</sup>)) + (1 - Y<sup>(i)</sup>) * log(1 -h<sub>&theta;</sub>(x<sup>(i)</sup>))
 
@@ -120,14 +120,16 @@ The update equation for &theta;,
 Repeat untill Convergence,
 &theta;<sub>j</sub>:= &theta;<sub>j</sub> + &alpha;<sup>&#x2202;l(&theta;)</sup>&frasl;<sub>&#x2202;&theta;<sub>j</sub></sub>; _where_ &alpha; is learning rate. 
 
+&alpha; is a hyperparameter that varies between 0 and 1 and needs to be optimized. It decides how fast or slow our algorithm is going to converge. Higher values might lead to overshooting the maxima and non convergence, while with lower values, it will take longer time to converge. After every update we calculate l(&theta;) and observe the change. This updation of &theta; might go on forever, so, we define a stopping criteria (often called precision) for when we are very close to the global maxima of the function. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
+
 ### Output
 
 can be described in general as output for any classification algorithm giving probability outputs.
-*probabilities
-*Confusion Matrix
-*Error Metrics - Misclassification Error, Precision, Recall, F1 Score
-*AUC
-*Lift and Gain Charts
-*IV and WOE
+* probabilities
+* Confusion Matrix
+* Error Metrics - Misclassification Error, Precision, Recall, F1 Score
+* AUC
+* Lift and Gain Charts
+* IV and WOE
 
 
