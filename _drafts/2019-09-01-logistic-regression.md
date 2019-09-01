@@ -5,7 +5,7 @@ title: "Logistic Regression"
 date: 2019-09-01
 ---
 
-Logistic Regression Model is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. Since, it is a classification technique, it is used for categorical target variables. 
+Logistic Regression is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. Since, it is a classification technique, it is used for categorical target variables. 
 
 ### Theory
 
@@ -17,14 +17,15 @@ From the plot it is very obvious that a linear equation like model (linear regre
 
 Y(x) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;
 
-Logit Transformation, Y(x) = ln(P(x)/(1-P(x))); _where_ ln is natural log.
+**Logit Transformation** (also defined as log(odds)), Y(x) = ln(P(x)/(1-P(x))); _where_ ln is natural log.
 
-&#8658; **P(x) = 1/(1+e<sup>-Y(x)</sup>)**; 
+&#8658; P(x) = 1/(1+e<sup>-Y(x)</sup>); 
+
 _where_ x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent variables, 
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 P(x) is the probability of occurence of event.
 
-which is also General Equation of a logistic regression with n independent variables. 
+which is also **General Equation of a logistic regression with n independent variables**. 
 
 ### Probability (Revision)
 
@@ -39,9 +40,9 @@ So, favourable outcome is when we get 4 i.e. 1 case and total possible outcomes 
 
 Now, there are some terms that one should be aware of when discussing probability.
 
-1. Exhaustive Events - The set of events that forms the sample space i.e. no event can take place outside this set.
+1. **Exhaustive Events** - The set of events that forms the sample space i.e. no event can take place outside this set.
 
-2. Mutually Exclusive Events - Events that do not take place together.
+2. **Mutually Exclusive Events** - Events that can not take place together.
 
 Sum of probabilites of events that are mutually exclusive and exhaustive is 1 
 
@@ -49,7 +50,7 @@ i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
 **insert venn diagram**
 
-3. Independent Events - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
+3. **Independent Events** - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events.
 
 In order to understand this better, we have to look for conditional probabillity.
 
@@ -73,13 +74,13 @@ This condition of independence can be extended to n no. of events being independ
 
 &#8658; P(A&cap;B&cap;C) = P(A)*P(B)*P(C) and so on.
 
-Next, Let's talk about Odds and Odds Ratio.
+Next, Let's talk about **Odds and Odds Ratio**.
 
-Odds = P(occurence)/P(non occurence)  =p/(1-p)
+- Odds = P(occurence)/P(non occurence)  =p/(1-p)
 
 Eg - For a coint toss, odds of getting a head = P(Head)/P(Not Head) = P(Head)/P(Tail) = 0.5/0.5 = 1:1
 
-Odds Ratio = Ratio of two odds = Odds1/Odds0
+- Odds Ratio = Ratio of two odds = Odds1/Odds0
 
 Eg - For a fair coin toss, P(Head) = 0.5 &#8658; Odds(Head) = Odds0 = 1:1
 
