@@ -133,10 +133,12 @@ Repeat untill Convergence,
 
 ### Output
 
+can be described in general as output for any classification algorithm giving probability outputs.
 *probabilities
 *Confusion Matrix
 *Error Metrics - Misclassification Error, Precision, Recall, F1 Score
 *AUC
 *Lift and Gain Charts
+*IV and WOE
 
 
