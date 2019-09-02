@@ -11,7 +11,7 @@ Logistic Regression is one of the most popular algorithms and is used widely in 
 
 Below is a scatter plot for a continuous predictor and a categorical target variable-
 
-**insert graph**
+![Scatter Plot](images/Logistic Regression Images/Scatter_plot.png)
 
 From the plot it is very obvious that a linear equation like model (linear regression) would not work in it's raw form as the output of linear regression would be unbounded and we would need some sort of transformation to bring the output in the permissible range of probability i.e. (0,1). In case of logistic regression, we use logit transformation for this purpose.
 
