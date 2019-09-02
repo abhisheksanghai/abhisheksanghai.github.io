@@ -31,6 +31,8 @@ which is also General Equation of a logistic regression with n independent varia
 
 The red line in the plot above is the probability output. It looks like S-shaped curve and is also called Sigmoid Curve.
 
+In order to use these probabilities for classification purpose, a threshold value is decided below which all the predictions will be decided as 1 and all the rest as 0.
+
 ### Probability (Revision)
 
 In probability, it's very important to define the sample space (Total possible outcomes, represented as S). The probability of occurence of an event E, is defined as, P(E) =  Favourable Outcomes/ Total Possible Outcomes.
