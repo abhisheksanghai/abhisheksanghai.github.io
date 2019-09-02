@@ -49,13 +49,15 @@ Now, there are some terms that one should be aware of when discussing probabilit
 
     Sum of probabilites of events that are mutually exclusive and exhaustive is 1 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
-**insert venn diagram**
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram1.png)
+
+In the above image, events D and E are subsets of event C. Event A, B and C together form set of exhaustive events and are mutually exclusive. Event D and E are not mutually exclusive as they have a non zero intersection part. So, P(A) + P(B) + P(C) = 1. 
 
 - Independent Events - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events. In order to understand this better, we have to look for conditional probabillity.
 
 P(A/B) => read as Probability of occurence of event A when it is known that Event B has already occured. (Probability of A given B)
 
-**insert venn diagram**
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram2.png)
 
 Since, Event B has already occured, the set of possible outcomes has now reduced to n(B), So favourable outcomes for A are only going to be from the set n(B) &#8658; We have to look for the ones where A and B occurs simultaneously.
 
