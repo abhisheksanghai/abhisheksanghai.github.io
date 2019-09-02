@@ -31,7 +31,7 @@ which is also General Equation of a logistic regression with n independent varia
 
 The red line in the plot above is the probability output. It looks like S-shaped curve and is also called Sigmoid Curve.
 
-In order to use these probabilities for classification purpose, a threshold value is decided below which all the predictions will be decided as 1 and all the rest as 0.
+In order to use these probabilities for classification purpose, a threshold value is decided between 0 and 1, below which all the predictions will be decided as 1 and all the rest as 0. As a naive rule, 0.5 can be taken as the cutoff, but there are better methods to determine the same. We will discuss these later.
 
 ### Probability (Revision)
 
