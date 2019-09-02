@@ -49,7 +49,7 @@ Now, there are some terms that one should be aware of when discussing probabilit
 
     Sum of probabilites of events that are mutually exclusive and exhaustive is 1 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
-![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram1.jpg)
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram_events.jpg)
 
 In the above image, events D and E are subsets of event C. Event A, B and C together form set of exhaustive events and are mutually exclusive. Event D and E are not mutually exclusive as they have a non zero intersection part. So, P(A) + P(B) + P(C) = 1. 
 
@@ -67,9 +67,11 @@ Intuitively, it means occurence of B did not affect A i.e. B has no effect on A 
 
 &#8658; P(A&cap;B) = P(A) * P(B) &#8658; **Condition of Independence**.
 
-![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram2.jpg)
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram_independent_events.jpg)
 
-If we look at above image, we see that, P(A) = 40/100 = 0.4 (A occurs 40 out of 100 times). Now, When we try to calculate P(A/B), our sample space reduced to 50(no. of times B is occuring). Out of these 50, there are 20 times A can occur. So, P(A/B) = 20/50 = 0.4. We can look at it the other way through the condition we derived.
+If we look at above image, we see that, P(A) = 40/100 = 0.4 (A occurs 40 out of 100 times). Now, When we try to calculate P(A/B), our sample space reduced to 50(no. of times B is occuring). Out of these 50, there are 20 times A can occur. So, P(A/B) = 20/50 = 0.4.
+
+We can also look at it the other way, through the condition we derived.
 
 P(A&cap;B) = 20/100 = 0.2
 
