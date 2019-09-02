@@ -136,7 +136,7 @@ Repeat untill Convergence,
 
 &alpha; is a hyperparameter that varies between 0 and 1 and needs to be optimized. It decides how fast or slow our algorithm is going to converge. Higher values might lead to overshooting the maxima and non convergence, while with lower values, it will take longer time to converge. After every update we calculate l(&theta;) and observe the change. This updation of &theta; might go on forever, so, we define a stopping criteria (often called precision) for when we are very close to the global maxima of the function. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
 
-### Output
+### Output and Implementation
 
 can be described in general as output for any classification algorithm giving probability outputs.
 * probabilities
@@ -144,6 +144,9 @@ can be described in general as output for any classification algorithm giving pr
 * Error Metrics - Misclassification Error, Precision, Recall, F1 Score
 * AUC
 * Lift and Gain Charts
+
+### Variable Selection and Transformation
+
 * IV and WOE
 
 
