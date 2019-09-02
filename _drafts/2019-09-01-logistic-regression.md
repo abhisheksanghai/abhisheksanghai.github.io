@@ -27,7 +27,9 @@ P(x) is the probability of occurence of event.
 
 which is also General Equation of a logistic regression with n independent variables. 
 
-**insert output graph for logistic (Sigmoid Curve)**
+![Sigmoid_Curve](/images/Logistic_Regression_Images/Sigmoid_Curve.png)
+
+The red line in the plot above is the probability output. It looks like S-shaped curve and is also called Sigmoid Curve.
 
 ### Probability (Revision)
 
