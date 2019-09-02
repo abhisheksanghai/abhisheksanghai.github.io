@@ -49,15 +49,13 @@ Now, there are some terms that one should be aware of when discussing probabilit
 
     Sum of probabilites of events that are mutually exclusive and exhaustive is 1 i.e. &Sigma; P(E<sub>i</sub>) = 1 _where_ i = 1,2,3,..,n(S)
 
-![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram1.png)
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram1.jpg)
 
 In the above image, events D and E are subsets of event C. Event A, B and C together form set of exhaustive events and are mutually exclusive. Event D and E are not mutually exclusive as they have a non zero intersection part. So, P(A) + P(B) + P(C) = 1. 
 
 - Independent Events - If occurence or non occurence of an event A does not affect the occurence of another event B, then A and B are said to be independent events. In order to understand this better, we have to look for conditional probabillity.
 
 P(A/B) => read as Probability of occurence of event A when it is known that Event B has already occured. (Probability of A given B)
-
-![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram2.png)
 
 Since, Event B has already occured, the set of possible outcomes has now reduced to n(B), So favourable outcomes for A are only going to be from the set n(B) &#8658; We have to look for the ones where A and B occurs simultaneously.
 
@@ -67,11 +65,19 @@ Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(
 
 Intuitively, it means occurence of B did not affect A i.e. B has no effect on A &#8658; A and B are independent events.
 
-&#8658; P(A&cap;B) = P(A)*P(B) &#8658; **Condition of Independence**.
+&#8658; P(A&cap;B) = P(A) * P(B) &#8658; **Condition of Independence**.
 
-This condition of independence can be extended to n no. of events being independent of each other i.e.
+![Venn Diagram](/images/Logistic_Regression_Images/Venn_Diagram2.jpg)
 
-&#8658; P(A&cap;B&cap;C) = P(A)*P(B)*P(C) and so on.
+If we look at above image, we see that, P(A) = 40/100 = 0.4 (A occurs 40 out of 100 times). Now, When we try to calculate P(A/B), our sample space reduced to 50(no. of times B is occuring). Out of these 50, there are 20 times A can occur. So, P(A/B) = 20/50 = 0.4. We can look at it the other way through the condition we derived.
+
+P(A&cap;B) = 20/100 = 0.2
+
+Also, P(A) * P(B) = 40/100 * 50/100 = 0.4*0.5 = 0.2
+
+Hence, what we see abve is an example of independent events. This condition of independence can be extended to n no. of events being independent of each other i.e.
+
+&#8658; P(A&cap;B&cap;C) = P(A) * P(B) * P(C) and so on.
 
 - Odds = P(occurence)/P(non occurence)  =p/(1-p)
 
