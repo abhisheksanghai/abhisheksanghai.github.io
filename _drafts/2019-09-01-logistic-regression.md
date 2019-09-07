@@ -59,7 +59,9 @@ P(A/B) => read as Probability of occurence of event A when it is known that Even
 
 Since, Event B has already occured, the set of possible outcomes has now reduced to n(B), So favourable outcomes for A are only going to be from the set n(B) &#8658; We have to look for the ones where A and B occurs simultaneously.
 
-&#8658; P(A/B) = n(A&cap;B)/n(B)  = <sup>(n(A&cap;B)/n(S))</sup>&frasl;<sub>(n(B)/n(S))</sub> = P(A&cap;B)/P(B) &#8658; P(A&cap;B) = P(A/B)*P(B)
+&#8658; P(A/B) = n(A&cap;B)/n(B)  = <sup>n(A&cap;B)/n(S)</sup>&frasl;<sub>n(B)/n(S)</sub> = P(A&cap;B)/P(B) 
+
+&#8658; P(A&cap;B) = P(A/B)*P(B)
 
 Now, P(A) changed after occurence of B => it became P(A/B). What happens when P(A/B) = P(A)?
 
