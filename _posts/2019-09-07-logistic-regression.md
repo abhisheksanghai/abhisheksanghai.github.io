@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Logistic Regression"
-date: 2019-09-01
+date: 2019-09-07
 ---
 
 Logistic Regression is one of the most popular algorithms and is used widely in the industry. It is a classification model that gives out probability of occurence of an event. For eg, if you want to determine if a customer is going to default on his loan from a bank based on his historical behaviour, logistic regression is one of the models you would be using. Since, it is a classification technique, it is used for categorical target variables. 
