@@ -77,7 +77,7 @@ P(A&cap;B) = 20/100 = 0.2
 
 Also, P(A) * P(B) = 40/100 * 50/100 = 0.4*0.5 = 0.2
 
-Hence, what we see abve is an example of independent events. This condition of independence can be extended to n no. of events being independent of each other i.e.
+Hence, what we see above is an example of independent events. This condition of independence can be extended to n no. of events being independent of each other i.e.
 
 &#8658; P(A&cap;B&cap;C) = P(A) * P(B) * P(C) and so on.
 
