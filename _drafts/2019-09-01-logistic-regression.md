@@ -25,7 +25,7 @@ _where_ x<sub>1</sub>, x<sub>2</sub>, .... , x<sub>n</sub> are independent varia
 &theta;<sub>o</sub>, &theta;<sub>1</sub>, ... , &theta;<sub>n</sub> are coefficients of independent variables and
 P(x) is the probability of occurence of event.
 
-which is also General Equation of a logistic regression with n independent variables. 
+which is also the **General Equation** of a logistic regression with n independent variables. 
 
 ![Sigmoid_Curve](/images/Logistic_Regression_Images/Sigmoid_Curve.png)
 
@@ -136,17 +136,4 @@ Repeat untill Convergence,
 
 &alpha; is a hyperparameter that varies between 0 and 1 and needs to be optimized. It decides how fast or slow our algorithm is going to converge. Higher values might lead to overshooting the maxima and non convergence, while with lower values, it will take longer time to converge. After every update we calculate l(&theta;) and observe the change. This updation of &theta; might go on forever, so, we define a stopping criteria (often called precision) for when we are very close to the global maxima of the function. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
 
-### Output and Implementation
-
-can be described in general as output for any classification algorithm giving probability outputs.
-* probabilities
-* Confusion Matrix
-* Error Metrics - Misclassification Error, Precision, Recall, F1 Score
-* AUC
-* Lift and Gain Charts
-
-### Variable Selection and Transformation
-
-* IV and WOE
-
-
+I will a separate post explaining the implementation of Logistic Regression on a dataset and various accuracy metrics used for analyzing the results.
