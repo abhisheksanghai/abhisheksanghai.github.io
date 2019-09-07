@@ -1,0 +1,22 @@
+---
+layout: post
+comments: true
+title: "Logistic Regression"
+date: 2019-09-01
+---
+
+
+### Output and Implementation
+
+can be described in general as output for any classification algorithm giving probability outputs.
+* probabilities
+* Confusion Matrix
+* Error Metrics - Misclassification Error, Precision, Recall, F1 Score
+* AUC
+* Lift and Gain Charts
+
+### Variable Selection and Transformation
+
+* IV and WOE
+
+
