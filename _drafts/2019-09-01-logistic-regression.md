@@ -99,6 +99,21 @@ This means, Odds of getting a head on the unfair coin is 1.5 times higher than t
 
 That's because in the output of logistic regression, Odds Ratio of a variable can be defined as the increase in odds of Event happening with unit increase in corresponding variable and it remains constant irrespective of the value from which the unit increase has been made. **Note:** Probability might still be less with higher value for Odds Ratio.
 
+**Explanation** :  
+
+log(odds0) = ln(<sup>P(x)</sup>&frasl;<sub>1-P(x)</sub>) = &theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub>
+
+&#8658; odds0 = e<sup>&theta;<sub>o</sub> + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub></sup>
+
+Let's increase the value of variable x<sub>1</sub> by 1 keeping other variables constant. 
+
+So, log(odds1) = &theta;<sub>o</sub> + &theta;<sub>1</sub>(x<sub>1</sub> + 1) + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub>
+
+&#8658; odds1 = e<sup>&theta;<sub>o</sub> + &theta;<sub>1</sub>(x<sub>1</sub> + 1) + &theta;<sub>2</sub>x<sub>2</sub> + ... + &theta;<sub>n</sub>x<sub>n</sub></sup>
+
+Therefore, odds ratio of x<sub>1</sub> = odds1/odds0 = e<sup> &theta;<sub>1</sub></sup> which is constant for a given dataset.
+Also, Note that this is independent of the value of x<sub>1</sub> from which the increment was made.
+
 ### Algorithm
 
 In Logistic Regression, we use Maximum Likelihood Estimation in order to arrive at the coefficients of the variables.
