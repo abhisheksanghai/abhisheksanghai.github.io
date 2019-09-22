@@ -33,7 +33,7 @@ One way to deal with this is **regularization**. Regularization allows us to add
 
 ### Classification Models
 
-1. Logistic Regression - It is a classification technique which gives out probability of an event occuring based on a transformed linear equation. The probability is then used for taking the decision.
+1. [Logistic Regression](https://abhisheksanghai.com/2019/09/07/logistic-regression) - It is a classification technique which gives out probability of an event occuring based on a transformed linear equation. The probability is then used for taking the decision.
 
 2. Decision Tree - These are tree based approaches that gives out a set of rules to determine the output. There are multiple algorithms 
 used for decision tree.
