@@ -19,4 +19,7 @@ can be described in general as output for any classification algorithm giving pr
 
 * IV and WOE
 
+In case of Binary Outcome Variables, Weight of Evidence(WoE) helps us identify non linearity in continuous variables and 
+Information value(IV) helps us choose variables that are important for prediciton.
+
 
