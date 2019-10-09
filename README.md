@@ -1,1 +1,1 @@
-[Visit My Website](https://abhisheksanghai.github.io)
+Github Repository for My blog [https://abhisheksanghai.com](https://abhisheksanghai.com)
