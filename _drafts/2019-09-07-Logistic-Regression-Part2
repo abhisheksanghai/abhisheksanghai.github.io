@@ -22,4 +22,8 @@ can be described in general as output for any classification algorithm giving pr
 In case of Binary Outcome Variables, Weight of Evidence(WoE) helps us identify non linearity in continuous variables and 
 Information value(IV) helps us choose variables that are important for prediciton.
 
+WoE is defined as, WOE = ln(% of Success/% of Failure)
+
+For a continous variable, split the data into 10 deciles
+
 
