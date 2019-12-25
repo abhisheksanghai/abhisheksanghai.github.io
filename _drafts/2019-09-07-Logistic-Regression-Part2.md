@@ -47,7 +47,7 @@ predicted to be True also. An exmaple would be Cancer Detection where it is very
 treatment.
 
 There is a trade off between Precision and Recall as when one increases, another decreases and it would be good for us if both of them had high values.
-To solve this issue, there is another metric commonly used i.e. **F1-Score = 2*Precision*Recall &frasl; (Precision+Recall)**.
+To solve this issue, there is another metric commonly used i.e. **F1-Score = 2 * Precision * Recall &frasl; (Precision+Recall)**.
 
 Again, the higher the F1-Score is, the better our model is.
 
