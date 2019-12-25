@@ -6,13 +6,13 @@ date: 2019-12-26
 ---
 
 Most of the Classification Algorithms gives out probability corresponding to each observation as their output. Now, we have to use these 
-probabilities to evaluate how good or bad our model is. There are several metrics available that can be used for this purpose but broadly there can be two approaches, using a threshold on probability and evaluation directly through probabiliites.
+probabilities to evaluate how good or bad our model is. There are several metrics available that can be used for this purpose but broadly there can be two approaches, using a threshold on probability and evaluation directly through probabilities.
 
 ## Setting a Threshold
 
 In this approach we decide on a probability threshold. Based on this, all observations with probability greater than the threshold will be considered as 1 and rest as 0. This brings our output in the form of actual outcome as binary variable. So, a confusion matrix can be drawn like below.
 
-**Insert Confusion Matrix Image**
+![Confusion Matrix](/images/Evaluation_of_Classification_Algorithms/Confusion_Matrix.jpg)
 
 **Some points to be noted about the Confusion Matrix** 
 * The TP block represents count of True Positive observations (Actual value was True and Predicted value is also True)
@@ -52,6 +52,8 @@ To solve this issue, there is another metric commonly used i.e. **F1-Score = 2 *
 Again, the higher the F1-Score is, the better our model is.
 
 **Note:** The Threshold of probability can be decided based on a grid search where we vary the probability from 0 and 1 and look for best value of evaluation metric being used.
+
+I will be talking about dealing with Probabilites without using Threshold in the next post.
 
 
 
