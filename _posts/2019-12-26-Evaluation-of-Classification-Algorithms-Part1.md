@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Evaluation of Classification Algorithms"
+title: "Evaluation of Classification Algorithms - Part1"
 date: 2019-12-26
 ---
 
