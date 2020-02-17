@@ -47,7 +47,7 @@ In the above case, all the responses have their probability above a certain thre
 
 **insert image**
 
-In the above scenario, there is no clear boundary which helps us classify both the cases. This is a much more realistic example of how a typical classification model output would look like and the are under this curve should be as high as possible.
+In the above scenario, there is no clear boundary which helps us classify both the cases. This is a much more realistic example of how a typical classification model output would look like and the area under this curve should be as high as possible.
 
 
 
