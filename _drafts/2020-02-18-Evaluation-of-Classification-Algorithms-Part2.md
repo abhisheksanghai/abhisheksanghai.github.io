@@ -5,7 +5,7 @@ title: "Evaluation of Classification Algorithms Part2"
 date: 2020-02-18
 ---
 
-As described in the last post, the probabilities obtained from classification algorithms can be used directly for evaluation or by setting a threshold for the same. In this post, I will be describing how to use probabilities directly for evaluation. These methods involve looking at certain graphs - 
+As described in the last post, the probabilities obtained from classification algorithms can be used directly for evaluation or by setting a threshold for the same. In this post, I will be describing how to use probabilities directly for evaluation with changing value of threshold. These methods involve looking at certain graphs - 
 
 ### Lift and Cummulative Gain Charts
 
@@ -49,3 +49,5 @@ In the above case, all the responses have their probability above a certain thre
 ![ROC Explanation 2](/images/Classification_Evaluation_Part2/ROC_Explanation2.jpg)
 
 In the above scenario, there is no clear boundary which helps us classify both the cases. This is a much more realistic example of how a typical classification model output would look like and the area under this curve should be as high as possible.
+
+I hope this clarifies the evaluation aspect of classification algorithms.
