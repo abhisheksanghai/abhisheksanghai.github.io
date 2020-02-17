@@ -20,7 +20,7 @@ The blue line represents random sampling distribution of responders in absence o
 
 From this, we can draw another plot representing the lift we get as we move towards sending surveys to higher no. of people.
 
-Lift = Percentage of responders identified with model / Percentage of responders expected with random sampling
+**Lift = Percentage of responders identified with model / Percentage of responders expected with random sampling**
 
 Below is the Lift Chart for the reference - 
 
