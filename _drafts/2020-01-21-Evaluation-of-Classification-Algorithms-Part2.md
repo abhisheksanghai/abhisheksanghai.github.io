@@ -7,7 +7,7 @@ date: 2020-02-17
 
 As described in the last post, the probabilities obtained from classification algorithms can be used directly for evaluation or by setting a threshold for the same. In this post, I will be describing how to use probabilities directly for evaluation. These methods involve looking at certain graphs - 
 
-1. Lift and Cummulative Gain Charts - 
+1. **Lift and Cummulative Gain Charts** - 
 
 Let's take an example of a survey. In the data, we have 1 survey sent out to 1000 users out of which we received 100 responses. The objective is to build a classification model to predict who is going to respond to the survey in order to reduce the cost of sending out the surveys that remain unanswered and increase the response rate. In this scenario, the decision of how many people should receive the survey will be made based on the business objective and the spend amount available with the team conducting the survey. One way to analyze the situation would be the use of Lift and Gain Charts.
 
@@ -27,9 +27,9 @@ Below is the Lift Chart for the reference -
 
 Using both these charts, the business can take decisions of how many users should actually be sent the surveys based on their constraints or flexibility allowed.
 
-2. AUC(Area Under the ROC Curve) - 
+2. **AUC(Area Under the ROC Curve)**
 
-For this, we need to look at 2 metrics, TPR(True Positive Rate) and FPR(False Positive Rate). The Notations remain same with respect to the Confusion Matrix described in the last post. **insert link**
+For this, we need to look at 2 metrics, TPR(True Positive Rate) and FPR(False Positive Rate). The Notations remain same with respect to the Confusion Matrix described in the last post. [Evaluation of Classification Algorithm-Part1](https://abhisheksanghai.com/2019/12/26/Evaluation-of-Classification-Algorithms-Part1)
 
 TPR = TP / (TP + FN)  - This represents the percentage of responses identified out of all the responses. It is also commonly known as Recall or Sensitivity.
 
