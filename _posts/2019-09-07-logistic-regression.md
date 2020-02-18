@@ -153,4 +153,9 @@ Repeat untill Convergence,
 
 &alpha; is a hyperparameter that varies between 0 and 1 and needs to be optimized. It decides how fast or slow our algorithm is going to converge. Higher values might lead to overshooting the maxima and non convergence, while with lower values, it will take longer time to converge. After every update we calculate l(&theta;) and observe the change. This updation of &theta; might go on forever, so, we define a stopping criteria (often called precision) for when we are very close to the global maxima of the function. If the change is less than the specified precision i.e. convergence is achieved, the algorithm stops.
 
-I will write a separate post explaining the implementation of Logistic Regression on a dataset and various accuracy metrics used for analyzing the results.
+I will write a separate post explaining the implementation of Logistic Regression on a dataset.
+For understanding how we would evaluate the model built, refer to the below links - 
+
+[Evaluation of Classification Algorithms-Part1](https://abhisheksanghai.com/2019/12/26/Evaluation-of-Classification-Algorithms-Part1)
+
+[Evaluation of Classification Algorithms-Part2](https://abhisheksanghai.com/2020/02/18/Evaluation-of-Classification-Algorithms-Part2)
