@@ -38,7 +38,7 @@ One way to deal with this is **regularization**. Regularization allows us to add
 2. Decision Tree - These are tree based approaches that gives out a set of rules to determine the output. There are multiple algorithms 
 used for decision tree.
 
-3. SVM (Support Vector Machine) - SVM unlike most of the algorithms tries to classify outcome non linearly. It transforms data into a higher dimension and then use it for classification. In lower dimension it appears that the separation plane is non linear. This is achieved through the use of kernels.
+3. [SVM (Support Vector Machine)](https://abhisheksanghai.com/2020/03/26/SVM) - SVM unlike most of the algorithms tries to classify outcome non linearly. It transforms data into a higher dimension and then use it for classification. In lower dimension it appears that the separation plane is non linear. This is achieved through the use of kernels.
 
 4. Naive Bayes - These are probability based classifiers that works on extended bayes theorem.
 
